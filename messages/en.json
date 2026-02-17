@@ -1,0 +1,225 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "crm": "CRM",
+    "online": "Online Omuz",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "about_page": {
+    "title": "We Are Omuz.tj",
+    "subtitle": "Innovating Education for the Future",
+    "story_title": "Our Story",
+    "story_desc": "Founded with a vision to revolutionize IT education in Tajikistan, Omuz has grown from a small startup to a leading ed-tech ecosystem.",
+    "values_title": "Our Values",
+    "values": {
+      "innovation": "Innovation",
+      "community": "Community",
+      "quality": "Quality"
+    },
+    "team_title": "Meet the Team"
+  },
+  "contact_page": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "address": "Dushanbe, Tajikistan",
+      "email": "info@omuz.tj",
+      "phone": "+992 900 00 00 00"
+    }
+  },
+  "products_crm": {
+    "title": "Omuz CRM",
+    "subtitle": "The Ultimate Management System for Educational Centers",
+    "features": {
+      "analytics": "Advanced Analytics",
+      "scheduling": "Smart Scheduling",
+      "payments": "Automated Payments"
+    },
+    "cta": "Request Demo"
+  },
+  "products_online": {
+    "title": "Online Omuz",
+    "subtitle": "Learn from the Best, Anywhere, Anytime",
+    "courses_title": "Popular Courses",
+    "cta": "Start Learning Now"
+  },
+  "hero": {
+    "title": "Omuz.tj - Modern IT Education Platform",
+    "subtitle": "Master modern professions and manage your educational business with Omuz.tj",
+    "slides": [
+      {
+        "title": "Modern learning for a bright future",
+        "subtitle": "Master modern professions with Omuz.tj and enter the world of IT.",
+        "cta": "Start Learning"
+      },
+      {
+        "title": "Lesson planning and easy management",
+        "subtitle": "CRM system for training centers: everything in one place.",
+        "cta": "Send Request"
+      },
+      {
+        "title": "Experienced mentors and 24/7 support",
+        "subtitle": "We help you at every step of your learning journey.",
+        "cta": "Details"
+      }
+    ]
+  },
+  "stats": {
+    "exp_years": "6 years",
+    "exp_desc": "Teaching experience",
+    "graduates": "280+",
+    "graduates_desc": "Number of graduates",
+    "employed": "70%",
+    "employed_desc": "Working in IT companies",
+    "satisfaction": "98%",
+    "satisfaction_desc": "Found their dream job"
+  },
+  "advantages": {
+    "title": "Our Advantages",
+    "method": {
+      "title": "Best Teaching Method",
+      "desc": "Our training programs are developed based on market requirements."
+    },
+    "mentors": {
+      "title": "Experienced Mentors",
+      "desc": "You will be taught by experienced IT specialists."
+    },
+    "fast": {
+      "title": "Fast Course",
+      "desc": "Acquire a modern profession in the shortest possible time."
+    }
+  },
+  "partners": {
+    "title": "Our graduates work at these places"
+  },
+  "courses_section": {
+    "title": "Courses",
+    "filters": {
+      "all": "All Courses",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "marketing": "Marketing",
+      "tme": "TME"
+    },
+    "card": {
+      "lessons": "lessons",
+      "students": "students",
+      "certificate": "Certificate"
+    },
+    "items": {
+      "frontend_react": "Frontend (React.js)",
+      "backend_python": "Backend (Python)",
+      "smm": "SMM & Marketing",
+      "graphic_design": "Graphic Design",
+      "english": "English for IT",
+      "qa": "QA Testing"
+    }
+  },
+  "hub": {
+    "title": "Our Products",
+    "subtitle": "The Omuz ecosystem - for educational growth and modern management.",
+    "online": {
+      "title": "Online Omuz",
+      "desc": "Online learning platform for mastering IT professions.",
+      "btn": "Learn More"
+    },
+    "crm": {
+      "title": "Omuz CRM",
+      "desc": "Management system for training centers and academies.",
+      "btn": "Learn More"
+    }
+  },
+  "product_online": {
+    "title": "Online Omuz",
+    "desc": "Let's master future professions together.",
+    "features": [
+      "High-quality online courses",
+      "Certificates upon completion",
+      "Professional and experienced mentors",
+      "280+ successful graduates"
+    ],
+    "cta": "Visit Site",
+    "back": "Go Back"
+  },
+  "product_crm": {
+    "title": "Omuz CRM",
+    "desc": "Complete solution for educational business management.",
+    "features": [
+      "Student database management",
+      "Payment control system",
+      "Detailed reports and analytics",
+      "Schedule and mentor management"
+    ],
+    "cta": "Visit Site",
+    "back": "Go Back"
+  },
+  "contact_section": {
+    "title": "Get answers to your questions",
+    "subtitle": "Leave your details, our specialists will contact you.",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email",
+      "submit": "Send Request"
+    }
+  },
+  "footer": {
+    "rights": "© 2024 Omuz.tj. All rights reserved.",
+    "contact_us": "Contact Us",
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About Us"
+  },
+  "about_section": {
+    "title": "Who We Are",
+    "subtitle": "Building the future of IT education in Tajikistan",
+    "desc_1": "Omuz.tj is the leading platform for IT education and management. We combine modern teaching methodologies with advanced technology to create the best learning experience.",
+    "desc_2": "Our ecosystem includes online courses, a CRM for educational centers, and a strong community of mentors and students.",
+    "stats": {
+      "students": "Students",
+      "mentors": "Mentors",
+      "partners": "Partners"
+    }
+  },
+  "features_section": {
+    "title": "Why Choose Omuz.tj?",
+    "subtitle": "We provide everything you need for successful learning and teaching.",
+    "cards": {
+      "mentors": {
+        "title": "Expert Mentors",
+        "desc": "Learn from industry professionals with real-world experience."
+      },
+      "schedule": {
+        "title": "Flexible Schedule",
+        "desc": "Study at your own pace, anytime and anywhere."
+      },
+      "career": {
+        "title": "Career Support",
+        "desc": "We help with resume building and job placement assistance."
+      },
+      "community": {
+        "title": "Strong Community",
+        "desc": "Join a network of like-minded learners and alumni."
+      }
+    }
+  },
+  "auth": {
+    "login_title": "Welcome Back",
+    "login_subtitle": "Enter your credentials to access your account",
+    "email_label": "Email",
+    "password_label": "Password",
+    "login_btn": "Sign In",
+    "forgot_password": "Forgot password?",
+    "no_account": "Don't have an account?",
+    "register": "Sign up"
+  }
+}

@@ -29,6 +29,9 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('subtitle'),
+    icons: {
+      icon: '/omuz title logo.png',
+    },
     openGraph: {
       title: t('title'),
       description: t('subtitle'),
@@ -71,9 +74,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased mx-auto shadow-2xl min-h-screen`}
       >
-        <ThemeProvider
+        <ThemeProvider  
           attribute="class"
           defaultTheme="light" 
           enableSystem

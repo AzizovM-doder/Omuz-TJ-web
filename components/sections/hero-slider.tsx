@@ -3,7 +3,9 @@
 import { useState, useEffect } from "react"
 import { useTranslations } from "next-intl"
 import { motion, AnimatePresence } from "framer-motion"
+
 import { Button } from "@/components/ui/button"
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
 import { ArrowRight, Sparkles, Zap, Shield } from "lucide-react"
 
 export function HeroSlider() {
@@ -30,7 +32,7 @@ export function HeroSlider() {
   const CurrentIcon = icons[currentSlide]
 
   return (
-    <section className="relative h-[100svh] lg:h-[85vh] min-h-[600px] w-full overflow-hidden bg-slate-950 flex flex-col justify-center">
+    <section className="relative h-[100svh] lg:h-[690px] min-h-[600px] w-full overflow-hidden bg-slate-950 flex flex-col justify-center">
       {/* Animated Background Mesh */}
       <div className="absolute inset-0 opacity-30">
         <div className={`absolute inset-0 bg-gradient-to-br ${gradients[currentSlide]} transition-colors duration-1000 ease-in-out opacity-20`} />
@@ -84,13 +86,14 @@ export function HeroSlider() {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
-                <Button 
-                  size="lg"
-                  className={`bg-gradient-to-r ${gradients[currentSlide]} hover:brightness-110 text-white border-0 h-14 px-8 text-lg rounded-full shadow-lg shadow-white/10 transition-all duration-300`}
+                <InteractiveHoverButton 
+                  className={`bg-gradient-to-r ${gradients[currentSlide]} hover:brightness-110 text-white border-0 h-14 w-auto px-8 text-lg rounded-full shadow-lg shadow-white/10 transition-all duration-300`}
                 >
-                  {t(`slides.${currentSlide}.cta`)}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                  <span className="flex items-center gap-2">
+                    {t(`slides.${currentSlide}.cta`)}
+                    {/* <ArrowRight className="h-5 w-5" /> */}
+                  </span>
+                </InteractiveHoverButton>
                 <Button 
                   size="lg"
                   variant="outline"

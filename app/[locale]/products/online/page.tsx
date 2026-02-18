@@ -36,12 +36,14 @@ export default function OnlineProductPage({
                 <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
                    {t('title')}
                 </h1>
-                <p className="text-xl text-slate-300 mb-10 leading-relaxed">
+                <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
                    {t('subtitle')}
                 </p>
                 <div className="flex gap-4">
-                   <Button size="lg" className="rounded-full bg-white text-black hover:bg-slate-200 h-14 px-8 text-lg font-bold">
-                      {t('cta')}
+                   <Button asChild size="lg" className="rounded-full bg-white text-black hover:bg-slate-200 h-14 px-8 text-lg font-bold">
+                      <a href="https://online.omuz.tj" target="_blank" rel="noopener noreferrer">
+                         {t('cta')}
+                      </a>
                    </Button>
                    <Button size="lg" variant="outline" className="rounded-full border-white/20 text-white hover:bg-white/10 h-14 px-8 text-lg backdrop-blur-sm">
                       Browse All

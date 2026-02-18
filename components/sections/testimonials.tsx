@@ -1,7 +1,7 @@
 "use client"
 
 import { useTranslations } from "next-intl"
-import { motion } from "framer-motion"
+import { MagicCard } from "@/components/ui/magic-card"
 import Image from "next/image"
 
 export function TestimonialsSection() {
@@ -36,13 +36,10 @@ export function TestimonialsSection() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testi, i) => (
-            <motion.div
+            <MagicCard
               key={i}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-background p-8 rounded-2xl border border-border shadow-sm flex flex-col justify-between"
+              className="cursor-pointer flex-col items-start justify-between p-8 shadow-2xl"
+              gradientColor={"#D9D9D955"}
             >
               <p className="text-muted-foreground italic mb-6">
                 "{testi.content}"
@@ -56,7 +53,7 @@ export function TestimonialsSection() {
                   <p className="text-xs text-muted-foreground">{testi.role}</p>
                 </div>
               </div>
-            </motion.div>
+            </MagicCard>
           ))}
         </div>
       </div>

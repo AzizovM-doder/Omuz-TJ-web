@@ -38,7 +38,7 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-sky-800 to-slate-900 dark:from-white dark:via-sky-200 dark:to-white"
+            className="text-4xl md:text-6xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground via-sky-800 to-foreground dark:from-white dark:via-sky-200 dark:to-white"
           >
             {t('title')}
           </motion.h2>
@@ -61,7 +61,7 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="md:col-span-5 md:row-span-2 rounded-3xl overflow-hidden relative group border border-slate-200 dark:border-slate-800 shadow-2xl"
+            className="md:col-span-5 md:row-span-2 rounded-3xl overflow-hidden relative group border border-border shadow-2xl"
           >
             <Image 
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
@@ -69,10 +69,10 @@ export function AboutSection() {
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-8 text-white">
               <h3 className="text-3xl font-bold mb-3">Community First</h3>
-              <p className="text-slate-300 leading-relaxed max-w-sm">
+              <p className="text-sky-100 leading-relaxed max-w-sm">
                 Join a vibrant community of learners and innovators shaping the future of technology together.
               </p>
             </div>
@@ -84,7 +84,7 @@ export function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="md:col-span-7 bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 relative overflow-hidden flex flex-col justify-between"
+            className="md:col-span-7 bg-card rounded-3xl p-8 border border-border relative overflow-hidden flex flex-col justify-between"
           >
              <div className="absolute top-0 right-0 w-64 h-64 bg-sky-500/5 rounded-full blur-3xl" />
              
@@ -131,7 +131,7 @@ export function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="md:col-span-3 rounded-3xl overflow-hidden relative border border-slate-200 dark:border-slate-800 shadow-xl group"
+            className="md:col-span-3 rounded-3xl overflow-hidden relative border border-border shadow-xl group"
           >
              <Image 
                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop"

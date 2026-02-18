@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Loader2 } from "lucide-react"
 import { Link } from "@/i18n/routing"
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
 
 export function LoginForm() {
   const t = useTranslations("auth")
@@ -92,14 +93,18 @@ export function LoginForm() {
             )}
           />
           
-          <Button 
+
+
+          <InteractiveHoverButton 
             type="submit" 
             className="w-full bg-gradient-to-r from-sky-600 to-purple-600 hover:from-sky-500 hover:to-purple-500 text-white h-12 rounded-xl shadow-lg shadow-sky-500/20 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]" 
             disabled={isLoading}
           >
-            {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            {t('login_btn')}
-          </Button>
+            <span className="flex items-center justify-center">
+              {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              {t('login_btn')}
+            </span>
+          </InteractiveHoverButton>
         </form>
       </Form>
 

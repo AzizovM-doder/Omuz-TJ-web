@@ -32,8 +32,10 @@ export default function CrmProductPage({
                 {t('subtitle')}
              </p>
              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="rounded-full bg-sky-600 hover:bg-sky-700 text-white px-8 text-lg h-14 shadow-lg shadow-sky-500/25">
-                   {t('cta')} <ChevronRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="rounded-full bg-sky-600 hover:bg-sky-700 text-white px-8 text-lg h-14 shadow-lg shadow-sky-500/25">
+                   <a href="https://crm.omuz.tj" target="_blank" rel="noopener noreferrer">
+                      {t('cta')} <ChevronRight className="ml-2 w-5 h-5" />
+                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="rounded-full px-8 text-lg h-14">
                    Live Preview
@@ -42,10 +44,10 @@ export default function CrmProductPage({
 
              {/* Dashboard Mockup - 3D Tilt Effect */}
              <div className="mt-20 relative max-w-5xl mx-auto perspective-[2000px]">
-                <div className="relative rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 shadow-2xl overflow-hidden transform rotate-x-12 hover:rotate-x-0 transition-transform duration-700 ease-out">
+                <div className="relative rounded-2xl border border-border bg-card shadow-2xl overflow-hidden transform rotate-x-12 hover:rotate-x-0 transition-transform duration-700 ease-out">
                    <div className="aspect-[16/9] relative">
                       {/* Placeholder for dashboard screenshot */}
-                      <div className="absolute inset-0 bg-slate-100 dark:bg-slate-800/50 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-muted flex items-center justify-center">
                          <div className="text-center">
                             <BarChart3 className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
                             <p className="text-muted-foreground font-medium">Dashboard Interface Preview</p>
@@ -66,7 +68,7 @@ export default function CrmProductPage({
        </section>
 
        {/* Features Grid */}
-       <section className="py-24 bg-slate-50 dark:bg-slate-900/50">
+       <section className="py-24 bg-muted/30">
           <div className="container mx-auto px-4">
              <div className="grid md:grid-cols-3 gap-8">
                 {[

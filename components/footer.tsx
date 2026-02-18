@@ -8,7 +8,7 @@ export function Footer() {
   const t = useTranslations("footer")
   
   return (
-    <footer className="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white border-t border-slate-200 dark:border-slate-800 pt-16 pb-8 transition-colors duration-300">
+    <footer className="bg-sky-50/50 dark:bg-slate-950 text-foreground border-t border-border pt-16 pb-8 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -36,14 +36,14 @@ export function Footer() {
                  />
                </div>
             </Link>
-            <p className="text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">
-              Платформаи таълимии муосир барои рушди касбӣ ва шахсӣ.
+            <p className="text-sky-900/80 dark:text-muted-foreground max-w-sm leading-relaxed">
+              {t("description")}
             </p>
             <div className="flex gap-4 pt-2">
               {/* Social Icons Placeholder */}
               {[1, 2, 3].map(i => (
-                <div key={i} className="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors cursor-pointer group/icon">
-                  <span className="w-5 h-5 bg-slate-500 dark:bg-slate-400 rounded-sm group-hover/icon:bg-white transition-colors" />
+                <div key={i} className="w-10 h-10 rounded-full bg-sky-100 dark:bg-zinc-900 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors cursor-pointer group/icon">
+                  <span className="w-5 h-5 bg-sky-400 dark:bg-sky-600 rounded-sm group-hover/icon:bg-white transition-colors" />
                 </div>
               ))}
             </div>
@@ -51,15 +51,15 @@ export function Footer() {
           
           {/* Links */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-slate-900 dark:text-white">Маълумот</h4>
+            <h4 className="font-bold text-lg mb-6 text-sky-950 dark:text-foreground">{t("info")}</h4>
             <ul className="space-y-4">
               {['home', 'courses', 'about'].map((item) => (
                 <li key={item}>
                   <Link 
                     href={`/`} 
-                    className="text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-500 transition-all inline-block hover:translate-x-1"
+                    className="text-sky-900/80 dark:text-muted-foreground hover:text-sky-600 dark:hover:text-sky-400 transition-all inline-block hover:translate-x-1"
                   >
-                    {t(item as any) || item} {/* Fallback or key */}
+                    {t(item as any)}
                   </Link>
                 </li>
               ))}
@@ -68,25 +68,25 @@ export function Footer() {
           
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-slate-900 dark:text-white">{t("contact_us")}</h4>
-            <ul className="space-y-4 text-slate-600 dark:text-slate-400">
+            <h4 className="font-bold text-lg mb-6 text-sky-950 dark:text-foreground">{t("contact")}</h4>
+            <ul className="space-y-4 text-sky-900/80 dark:text-muted-foreground">
               <li className="flex items-start gap-3">
-                <span className="mt-1 text-sky-500">📍</span>
+                <span className="mt-1 text-sky-600 dark:text-sky-500">📍</span>
                 <span>Душанбе, Тоҷикистон</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-sky-500">📞</span>
-                <span>+992 00 000 00 00</span>
+                <span className="text-sky-600 dark:text-sky-500">📞</span>
+                <span>(+992) 111 585 050</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-sky-500">✉️</span>
-                <span>info@omuz.tj</span>
+                <span className="text-sky-600 dark:text-sky-500">✉️</span>
+                <span>online@omuz.tj</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center gap-4">
           <p>{t("rights")}</p>
           <div className="flex gap-6">
              <Link href="#" className="hover:text-sky-600 dark:hover:text-white transition-colors">Privacy Policy</Link>

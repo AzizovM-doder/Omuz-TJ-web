@@ -1,18 +1,18 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
-import { LoginForm } from "@/components/auth/login-form";
+import { RegisterForm } from "@/components/auth/register-form";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
 
 import { MagicCard } from "@/components/ui/magic-card";
 
-export default async function LoginPage({
+export default async function RegisterPage({
   params
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({locale, namespace: 'login_page'});
+  const t = await getTranslations({locale, namespace: 'register_page'});
 
   return (
     <div className="min-h-screen w-full flex bg-background relative overflow-hidden">
@@ -31,18 +31,18 @@ export default async function LoginPage({
             className="w-full max-w-md bg-white/50 dark:bg-slate-950/50 backdrop-blur-xl border border-white/20 dark:border-white/10 p-8 rounded-3xl shadow-2xl"
             gradientColor={"#D9D9D955"}
           >
-             <div className="mb-8 text-center">
+             <div className="mb-6 text-center">
                 <div className="inline-block px-3 py-1 mb-4 rounded-full bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 text-xs font-bold uppercase tracking-wider">
-                  {t('welcome_back')}
+                  {t('join_us')}
                 </div>
-                <h2 className="text-3xl font-bold mb-2 tracking-tight">{t('sign_in')}</h2>
-                <p className="text-muted-foreground">{t('enter_credentials')}</p>
+                <h2 className="text-3xl font-bold mb-2 tracking-tight">{t('create_account')}</h2>
+                <p className="text-muted-foreground">{t('start_journey')}</p>
              </div>
              
-             <LoginForm />
+             <RegisterForm />
              
              <div className="mt-8 text-center text-sm text-muted-foreground">
-               <p>{t('security')}</p>
+               <p>{t('terms')}</p>
              </div>
           </MagicCard>
        </div>

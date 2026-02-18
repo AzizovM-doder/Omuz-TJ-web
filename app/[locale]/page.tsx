@@ -4,6 +4,10 @@ import { AboutSection } from "@/components/sections/about-section";
 import { FeaturesSection } from "@/components/sections/features-section";
 import { ProductSelectionCard } from "@/components/hub/ProductSelectionCard";
 import { Footer } from "@/components/footer";
+import { CtaSection } from "@/components/sections/cta-section";
+import { PartnersMarquee } from "@/components/sections/partners-marquee";
+import { TestimonialsSection } from "@/components/sections/testimonials";
+import { EcosystemBeam } from "@/components/sections/ecosystem-beam";
 
 export default async function Home({
   params
@@ -18,6 +22,8 @@ export default async function Home({
     <div className="min-h-screen flex flex-col">
       <HeroSlider />
       
+      <EcosystemBeam />
+
       <section className="container px-4 md:px-6 py-12 md:py-24 mx-auto grow">
         <div className="grid gap-6 md:grid-cols-2 lg:gap-12 max-w-4xl mx-auto">
           <ProductSelectionCard 
@@ -40,6 +46,12 @@ export default async function Home({
       <AboutSection />
       
       <FeaturesSection />
+
+      <PartnersMarquee />
+
+      <TestimonialsSection />
+
+      <CtaSection />
 
       <Footer />
     </div>

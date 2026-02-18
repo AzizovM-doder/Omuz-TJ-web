@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, LayoutDashboard } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 interface ProductSelectionCardProps {
@@ -58,12 +59,13 @@ export const ProductSelectionCard = ({
            {/* Can add simplified feature bullets here if desired */}
         </CardContent>
         <CardFooter className="pt-0">
-          <Button asChild className={`w-full h-12 text-base rounded-xl group-hover:scale-[1.02] transition-transform duration-300 ${type === 'online' ? 'bg-sky-600 hover:bg-sky-700 text-white' : 'bg-purple-600 hover:bg-purple-700 text-white'}`}>
-            <Link href={link}>
-              {buttonText}
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </Button>
+          <Link href={link} className="w-full">
+            <InteractiveHoverButton className={`w-full h-12 text-base rounded-xl group-hover:scale-[1.02] transition-transform duration-300 ${type === 'online' ? 'bg-sky-600 hover:bg-sky-700 text-white' : 'bg-purple-600 hover:bg-purple-700 text-white'}`}>
+               <span className="flex items-center justify-center gap-2">
+                 {buttonText}
+               </span>
+            </InteractiveHoverButton>
+          </Link>
         </CardFooter>
       </Card>
     </motion.div>

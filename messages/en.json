@@ -101,6 +101,9 @@
   "partners": {
     "title": "Our graduates work at these places"
   },
+  "testimonials": {
+    "title": "What Our Clients Say"
+  },
   "courses_section": {
     "title": "Courses",
     "filters": {
@@ -177,7 +180,10 @@
     "contact_us": "Contact Us",
     "home": "Home",
     "courses": "Courses",
-    "about": "About Us"
+    "about": "About Us",
+    "description": "Learn programming from the best teachers in Tajikistan and abroad.",
+    "info": "Information",
+    "contact": "Contact"
   },
   "about_section": {
     "title": "Who We Are",
@@ -220,6 +226,29 @@
     "login_btn": "Sign In",
     "forgot_password": "Forgot password?",
     "no_account": "Don't have an account?",
-    "register": "Sign up"
+    "register": "Sign up",
+    "name_label": "Full Name",
+    "confirm_password_label": "Confirm Password",
+    "register_btn": "Create Account",
+    "have_account": "Already have an account?",
+    "login": "Sign in"
+  },
+  "register_page": {
+    "join_us": "Join Us",
+    "create_account": "Create Account",
+    "start_journey": "Start your journey with Omuz.tj today",
+    "terms": "By registering, you agree to our Terms of Service and Privacy Policy"
+  },
+  "cta_section": {
+    "title": "Ready to Transform Your Future?",
+    "subtitle": "Join Omuz.tj today and start your journey towards excellence.",
+    "get_started": "Get Started",
+    "contact": "Contact Us"
+  },
+  "login_page": {
+    "welcome_back": "Welcome Back",
+    "sign_in": "Sign In",
+    "enter_credentials": "Enter your credentials to access your account",
+    "security": "Protected by Omuz.tj Security"
   }
 }

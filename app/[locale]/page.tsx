@@ -4,7 +4,7 @@ import { AboutSection } from "@/components/sections/about-section";
 import { FeaturesSection } from "@/components/sections/features-section";
 import { ProductSelectionCard } from "@/components/hub/ProductSelectionCard";
 import { Footer } from "@/components/footer";
-import { CtaSection } from "@/components/sections/cta-section";
+import { ConsultationSection } from "@/components/sections/consultation";
 import { PartnersMarquee } from "@/components/sections/partners-marquee";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 import { EcosystemBeam } from "@/components/sections/ecosystem-beam";
@@ -22,9 +22,11 @@ export default async function Home({
     <div className="min-h-screen flex flex-col">
       <HeroSlider />
       
-      <EcosystemBeam />
+      <PartnersMarquee />
 
-      <section className="container px-4 md:px-6 py-12 md:py-24 mx-auto grow">
+      <AboutSection />
+
+      <section className="container max-w-7xl px-4 md:px-6 py-12 md:py-24 mx-auto grow">
         <div className="grid gap-6 md:grid-cols-2 lg:gap-12 max-w-4xl mx-auto">
           <ProductSelectionCard 
             title={t('online.title')}
@@ -43,15 +45,13 @@ export default async function Home({
         </div>
       </section>
 
-      <AboutSection />
-      
-      <FeaturesSection />
+      <EcosystemBeam />
 
-      <PartnersMarquee />
+      <FeaturesSection />
 
       <TestimonialsSection />
 
-      <CtaSection />
+      <ConsultationSection />
 
       <Footer />
     </div>

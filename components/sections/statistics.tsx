@@ -34,7 +34,7 @@ function Counter({ value, suffix = "" }: { value: number, suffix?: string }) {
 }
 
 export function StatisticsSection() {
-  const t = useTranslations("statistics")
+  const t = useTranslations("stats")
   
   const stats = [
     { value: 500, suffix: "+", label: t("centers") },

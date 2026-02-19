@@ -41,7 +41,7 @@ export default function ContactPage({
                          <MapPin className="w-6 h-6" />
                        </div>
                        <div>
-                         <h3 className="font-bold text-lg mb-1">Address</h3>
+                         <h3 className="font-bold text-lg mb-1">{t('address_label')}</h3>
                          <p className="text-muted-foreground">{t('info.address')}</p>
                        </div>
                     </div>
@@ -51,7 +51,7 @@ export default function ContactPage({
                          <Mail className="w-6 h-6" />
                        </div>
                        <div>
-                         <h3 className="font-bold text-lg mb-1">Email</h3>
+                         <h3 className="font-bold text-lg mb-1">{t('email_label')}</h3>
                          <p className="text-muted-foreground">{t('info.email')}</p>
                        </div>
                     </div>
@@ -61,7 +61,7 @@ export default function ContactPage({
                          <Phone className="w-6 h-6" />
                        </div>
                        <div>
-                         <h3 className="font-bold text-lg mb-1">Phone</h3>
+                         <h3 className="font-bold text-lg mb-1">{t('phone_label')}</h3>
                          <p className="text-muted-foreground">{t('info.phone')}</p>
                        </div>
                     </div>
@@ -70,7 +70,7 @@ export default function ContactPage({
                  {/* Map Placeholder */}
                  <div className="mt-8 h-64 w-full bg-slate-200 dark:bg-slate-800 rounded-2xl overflow-hidden relative group">
                     <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-medium bg-slate-100 dark:bg-slate-900">
-                       Map Component Implementation
+                       {t('map_implementation')}
                     </div>
                     {/* Simulated Map UI */}
                     <div className="absolute top-4 right-4 p-2 bg-background rounded-lg shadow-sm">

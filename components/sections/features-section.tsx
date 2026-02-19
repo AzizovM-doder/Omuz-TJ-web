@@ -2,16 +2,16 @@
 
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
-import { Users, Clock, Briefcase, Heart, Cpu } from "lucide-react"
+import { Code, Server, TrendingUp, Handshake, Cpu } from "lucide-react"
 
 export function FeaturesSection() {
   const t = useTranslations("features_section")
 
   const features = [
-    { icon: Users, key: "mentors", color: "text-sky-500", gradient: "from-sky-500/20 to-sky-500/5" },
-    { icon: Clock, key: "schedule", color: "text-purple-500", gradient: "from-purple-500/20 to-purple-500/5" },
-    { icon: Briefcase, key: "career", color: "text-amber-500", gradient: "from-amber-500/20 to-amber-500/5" },
-    { icon: Heart, key: "community", color: "text-rose-500", gradient: "from-rose-500/20 to-rose-500/5" },
+    { icon: Code, key: "mentors", color: "text-blue-500", gradient: "from-blue-500/20 to-blue-500/5" },
+    { icon: Server, key: "schedule", color: "text-indigo-500", gradient: "from-indigo-500/20 to-indigo-500/5" },
+    { icon: TrendingUp, key: "career", color: "text-emerald-500", gradient: "from-emerald-500/20 to-emerald-500/5" },
+    { icon: Handshake, key: "community", color: "text-purple-500", gradient: "from-purple-500/20 to-purple-500/5" },
   ]
 
   return (
@@ -19,7 +19,7 @@ export function FeaturesSection() {
        {/* Background Noise/Grid */}
        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.02] dark:opacity-[0.05]" />
        
-      <div className="container px-4 mx-auto relative z-10">
+      <div className="container max-w-7xl px-4 mx-auto relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-20">
           <motion.div
              initial={{ opacity: 0, y: 10 }}
@@ -28,7 +28,7 @@ export function FeaturesSection() {
              className="flex items-center justify-center gap-2 text-primary font-medium mb-4"
           >
              <Cpu className="w-5 h-5" />
-             <span className="uppercase tracking-widest text-xs">Core Advantages</span>
+             <span className="uppercase tracking-widest text-xs">{t("badge")}</span>
           </motion.div>
           
           <motion.h2 
@@ -60,7 +60,7 @@ export function FeaturesSection() {
               transition={{ delay: i * 0.1 }}
               className="group relative p-1 rounded-3xl overflow-hidden bg-gradient-to-b from-border/50 to-border/10 hover:from-primary/50 hover:to-primary/10 transition-colors duration-500"
             >
-              <div className="absolute inset-0 bg-background/90 backdrop-blur-sm rounded-[22px] m-[1px]" />
+              <div className="absolute inset-0 bg-card/90 backdrop-blur-sm rounded-[22px] m-[1px]" />
               
               <div className="relative h-full p-6 flex flex-col items-center text-center z-10">
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-xl`}>

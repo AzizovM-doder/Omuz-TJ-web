@@ -9,28 +9,28 @@ export function TestimonialsSection() {
   
   const testimonials = [
     {
-      name: "Alijon Karimov",
-      role: "Director, Smart Education",
-      content: "Omuz.tj transformed how we manage our students. The CRM is intuitive and the online platform is top-notch.",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alijon"
+      name: "Jamshed Rahmonov",
+      role: t('jamshed_role'),
+      content: t('jamshed'),
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jamshed"
     },
     {
-      name: "Sitora Nazarova",
-      role: "Online Mentor",
-      content: "The online learning tools are incredible. Video conferences and material management are seamless.",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sitora"
+      name: "Malika Sharipova",
+      role: t('malika_role'),
+      content: t('malika'),
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Malika"
     },
     {
       name: "Davron Jumaev",
-      role: "Finance Manager",
-      content: "Automation of finance reporting saved us hours of work every week. Highly recommend Omuz.tj!",
+      role: t('davron_role'),
+      content: t('davron'),
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Davron"
     },
   ]
 
   return (
     <section id="testimonials" className="py-20 bg-accent/20">
-      <div className="container mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
           {t("title")}
         </h2>

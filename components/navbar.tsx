@@ -31,11 +31,11 @@ export function Navbar() {
   return (
     <header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md transition-all duration-300 border-b border-border",
+        "fixed top-0 left-0  right-0 z-50 bg-background/80 backdrop-blur-md transition-all duration-300 border-b border-border",
         scrolled && "shadow-sm"
       )}
     >
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+      <div className="container max-w-7xl p-5 mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
            <div>
@@ -112,7 +112,7 @@ export function Navbar() {
                  <div className="h-px bg-border" />
                  
                  <div className="flex items-center justify-between">
-                    <span className="text-foreground/60 text-sm">Theme</span>
+                    <span className="text-foreground/60 text-sm">{t('theme')}</span>
                     <ThemeToggle />
                  </div>
 

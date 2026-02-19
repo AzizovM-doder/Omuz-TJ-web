@@ -45,7 +45,7 @@ export function ContactSection() {
                  <input 
                    type="tel" 
                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all"
-                   placeholder="+992 00 000 00 00"
+                   placeholder={t("form.phone_placeholder")}
                  />
                </div>
 
@@ -56,7 +56,7 @@ export function ContactSection() {
                  <input 
                    type="email" 
                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition-all"
-                   placeholder="example@gmail.com"
+                   placeholder={t("form.email_placeholder")}
                  />
                </div>
 
@@ -80,7 +80,7 @@ export function ContactSection() {
                <div className="relative z-10 w-full h-full bg-gradient-to-br from-sky-100 to-white rounded-3xl border border-white/50 shadow-2xl flex items-center justify-center overflow-hidden">
                  <div className="text-center p-8">
                    <div className="text-6xl mb-4">📬</div>
-                   <h3 className="text-2xl font-bold text-sky-900">Contact Us</h3>
+                   <h3 className="text-2xl font-bold text-sky-900">{t("illustration_title")}</h3>
                  </div>
                </div>
             </div>

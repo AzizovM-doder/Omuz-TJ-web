@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -87,6 +89,7 @@ export default async function RootLayout({
             <main className="pt-20">
               {children}
             </main>
+            <ToastContainer position="top-right" theme="system" />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

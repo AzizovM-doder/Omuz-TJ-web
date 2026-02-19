@@ -3,218 +3,406 @@
     "home": "Home",
     "about": "About Us",
     "products": "Products",
+    "services": "Services",
     "crm": "CRM",
     "online": "Online Omuz",
     "contact": "Contact",
-    "login": "Login"
+    "login": "Login",
+    "view_details": "View details",
+    "theme": "Theme"
   },
   "about_page": {
-    "title": "We Are Omuz.tj",
-    "subtitle": "Innovating Education for the Future",
+    "title": "We Are Omuz Company",
+    "subtitle": "Innovating Technology for the Future",
     "story_title": "Our Story",
-    "story_desc": "Founded with a vision to revolutionize IT education in Tajikistan, Omuz has grown from a small startup to a leading ed-tech ecosystem.",
+    "story_desc": "Founded with a vision to revolutionize the tech landscape in Tajikistan, Omuz has grown from a visionary startup to a leading software and educational ecosystem.",
     "values_title": "Our Values",
     "values": {
       "innovation": "Innovation",
-      "community": "Community",
-      "quality": "Quality"
+      "community": "Partnership",
+      "quality": "Excellence"
     },
-    "team_title": "Meet the Team"
+    "team_title": "Our Experts",
+    "team_subtitle": "Meet the minds behind Omuz.",
+    "mission_title": "Our Mission",
+    "mission_desc": "To empower businesses and individuals through innovative technology and accessible education, fostering a digital ecosystem that drives growth and opportunity in Tajikistan and beyond.",
+    "vision_title": "Our Vision",
+    "vision_desc": "To be the leading catalyst for digital transformation in Central Asia, recognized for excellence, innovation, and social impact.",
+    "cta_title": "Join Our Journey",
+    "cta_subtitle": "Be a part of the digital revolution. Whether as a partner, student, or team member.",
+    "cta_btn": "Contact Us"
   },
   "contact_page": {
     "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you",
+    "subtitle": "Let's discuss how we can help your business grow",
     "form": {
       "name": "Name",
       "email": "Email",
       "message": "Message",
       "submit": "Send Message"
     },
+    "illustration_title": "Contact Us",
+    "address_label": "Address",
+    "email_label": "Email",
+    "phone_label": "Phone",
     "info": {
       "address": "Dushanbe, Tajikistan",
       "email": "info@omuz.tj",
       "phone": "+992 900 00 00 00"
-    }
+    },
+    "map_implementation": "Map Component Implementation"
   },
   "products_crm": {
     "title": "Omuz CRM",
-    "subtitle": "The Ultimate Management System for Educational Centers",
+    "subtitle": "The Ultimate Management System for Enterprises",
+    "description": "Streamline your educational center's operations with our all-in-one platform. From student enrollment to financial reporting, Omuz CRM handles it all.",
+    "cta": "Get Started",
+    "demo": "Book a Demo",
+    "features_title": "Everything You Need to Run Your Center",
+    "features_subtitle": "Powerful tools designed specifically for educational institutions.",
     "features": {
-      "analytics": "Advanced Analytics",
-      "scheduling": "Smart Scheduling",
-      "payments": "Automated Payments"
+      "analytics": {
+        "title": "Advanced Analytics",
+        "desc": "Real-time insights into enrollment, revenue, and retention rates."
+      },
+      "scheduling": {
+        "title": "Smart Scheduling",
+        "desc": "Automated class scheduling and room allocation management."
+      },
+      "payments": {
+        "title": "Automated Finance",
+        "desc": "Track tuition payments, generate invoices, and manage payroll."
+      },
+      "students": {
+        "title": "Student Portal",
+        "desc": "Dedicated access for students to check grades and attendance."
+      },
+      "mobile": {
+        "title": "Mobile App",
+        "desc": "Manage your business on the go with our iOS and Android apps."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "desc": "Dedicated technical support team ready to assist you anytime."
+      }
     },
-    "cta": "Request Demo"
+    "stats": {
+      "centers": "Education Centers",
+      "users": "Active Users",
+      "uptime": "Uptime Guarantee",
+      "transactions": "Transactions"
+    },
+    "interactive_dashboard": "Interactive Dashboard",
+    "faq_title": "Frequently Asked Questions",
+    "faq": {
+      "q1": "Is Omuz CRM cloud-based?",
+      "a1": "Yes, Omuz CRM is fully cloud-based, allowing you to access it from anywhere securely.",
+      "q2": "Can I migrate my existing data?",
+      "a2": "Absolutely. We offer free data migration services to help you switch smoothly.",
+      "q3": "Do you offer training?",
+      "a3": "We provide comprehensive onboarding and training for your entire team."
+    },
+    "items": {
+      "0": {
+        "q": "How does the CRM help my center?",
+        "a": "Our CRM automates student tracking, scheduling, and finance, allowing you to focus on education rather than administration."
+      },
+      "1": {
+        "q": "Is the online platform secure?",
+        "a": "Yes, we use industry-standard encryption and secure video hosting for all lessons and materials."
+      },
+      "2": {
+        "q": "Can I use Omuz.tj on mobile?",
+        "a": "Absolutely! Our platform is fully responsive and works beautifully on any device."
+      },
+      "3": {
+        "q": "Do you offer support in Tajik?",
+        "a": "Yes, our support team is available 24/7 and speaks Tajik, Russian, and English."
+      },
+      "4": {
+        "q": "How fast can we start?",
+        "a": "Setup usually takes less than 24 hours. You can start importing your data immediately."
+      },
+      "5": {
+        "q": "Is there a free trial?",
+        "a": "We offer a 14-day free trial so you can experience all the features before committing."
+      }
+    },
+    "cta_section": {
+      "title": "Ready to Optimize Your Business?",
+      "subtitle": "Join over 50+ educational centers using Omuz CRM today.",
+      "btn": "Start Free Trial"
+    },
+    "link": "omuz.tj/crm"
   },
   "products_online": {
     "title": "Online Omuz",
-    "subtitle": "Learn from the Best, Anywhere, Anytime",
-    "courses_title": "Popular Courses",
-    "cta": "Start Learning Now"
+    "subtitle": "Digital Learning & Corporate Training Platform",
+    "description": "Unlock your potential with high-quality courses taught by industry experts. Learn coding, design, marketing, and more.",
+    "cta": "Start Learning",
+    "browse": "Browse Courses",
+    "courses_title": "Explore Top Categories",
+    "courses_subtitle": "Find the perfect course to upgrade your skills.",
+    "categories": {
+      "dev": "Development",
+      "design": "Design",
+      "marketing": "Marketing",
+      "business": "Business"
+    },
+    "view_all": "View All Categories",
+    "trending": "Trending Now",
+    "course_suffix": "Courses",
+    "benefits_title": "Why Choose Online Omuz?",
+    "benefits": {
+      "expert": {
+        "title": "Expert Instructors",
+        "desc": "Learn from professionals working at top tech companies."
+      },
+      "certificate": {
+        "title": "Recognized Certificates",
+        "desc": "Earn certificates upon completion to showcase your skills."
+      },
+      "access": {
+        "title": "Lifetime Access",
+        "desc": "Pay once and keep the course content forever."
+      },
+      "community": {
+        "title": "Learning Community",
+        "desc": "Join thousands of learners in our active community forum."
+      }
+    },
+    "stats": {
+      "courses": "Video Courses",
+      "instructors": "Expert Mentors",
+      "students": "Happy Students"
+    },
+    "cta_section": {
+      "title": "Start Your Learning Journey",
+      "subtitle": "Get unlimited access to over 100+ courses with our pro plan.",
+      "btn": "Join Pro"
+    },
+    "link": "online.omuz.tj"
   },
   "hero": {
-    "title": "Omuz.tj - Modern IT Education Platform",
-    "subtitle": "Master modern professions and manage your educational business with Omuz.tj",
+    "title": "Omuz.tj - Digital Transformation Ecosystem",
+    "subtitle": "Building robust software solutions and empowering the next generation of tech leaders.",
+    "live_badge": "Omuz.tj is live!",
+    "badge": "Omuz Ecosystem",
     "slides": [
       {
-        "title": "Modern learning for a bright future",
-        "subtitle": "Master modern professions with Omuz.tj and enter the world of IT.",
-        "cta": "Start Learning"
+        "title": "Innovative Solutions for Modern Business",
+        "subtitle": "We provide cutting-edge software development and digital transformation services.",
+        "cta": "Our Services"
       },
       {
-        "title": "Lesson planning and easy management",
-        "subtitle": "CRM system for training centers: everything in one place.",
-        "cta": "Send Request"
+        "title": "Omuz CRM & Management",
+        "subtitle": "Comprehensive management systems for educational and corporate institutions.",
+        "cta": "View Products"
       },
       {
-        "title": "Experienced mentors and 24/7 support",
-        "subtitle": "We help you at every step of your learning journey.",
-        "cta": "Details"
+        "title": "Online Omuz Platform",
+        "subtitle": "A premier platform for accessible and high-quality digital education.",
+        "cta": "Learn More"
       }
     ]
   },
   "stats": {
     "exp_years": "6 years",
-    "exp_desc": "Teaching experience",
+    "exp_desc": "Market Excellence",
     "graduates": "280+",
-    "graduates_desc": "Number of graduates",
-    "employed": "70%",
-    "employed_desc": "Working in IT companies",
-    "satisfaction": "98%",
-    "satisfaction_desc": "Found their dream job"
+    "graduates_desc": "Successful Projects",
+    "employed": "100%",
+    "employed_desc": "Client Satisfaction",
+    "satisfaction": "50+",
+    "satisfaction_desc": "Enterprise Partners",
+    "suffix_plus": "+",
+    "suffix_k_plus": "K+",
+    "suffix_slash_7": "/7",
+    "suffix_percent": "%",
+    "centers": "Education Centers",
+    "students": "Active Students",
+    "support": "Support 24/7"
   },
   "advantages": {
-    "title": "Our Advantages",
+    "title": "Why Partner With Us",
     "method": {
-      "title": "Best Teaching Method",
-      "desc": "Our training programs are developed based on market requirements."
+      "title": "Agile Methodology",
+      "desc": "We adapt to your needs with flexible and efficient development processes."
     },
     "mentors": {
-      "title": "Experienced Mentors",
-      "desc": "You will be taught by experienced IT specialists."
+      "title": "Expert Team",
+      "desc": "Our team consists of industry veterans and certified professionals."
     },
     "fast": {
-      "title": "Fast Course",
-      "desc": "Acquire a modern profession in the shortest possible time."
+      "title": "Rapid Delivery",
+      "desc": "We value your time and ensure timely delivery of all projects."
     }
   },
   "partners": {
-    "title": "Our graduates work at these places"
+    "title": "Trusted by Industry Leaders"
   },
   "testimonials": {
-    "title": "What Our Clients Say"
+    "title": "Client Testimonials",
+    "jamshed": "Omuz Company provided exceptional software solutions that streamlined our entire workflow. A true partner in innovation.",
+    "jamshed_role": "CEO, TechForward",
+    "malika": "The corporate training modules from Online Omuz significantly improved our team's technical capabilities.",
+    "malika_role": "HR Director, Bank Eskhata",
+    "davron": "Omuz CRM's financial automation features meet the highest enterprise standards. Highly recommended.",
+    "davron_role": "Finance Manager, Somon Air"
   },
   "courses_section": {
-    "title": "Courses",
+    "title": "Key Areas of Expertise",
     "filters": {
-      "all": "All Courses",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "marketing": "Marketing",
-      "tme": "TME"
+      "all": "All Sectors",
+      "frontend": "Development",
+      "backend": "Infrastructure",
+      "marketing": "Digital Marketing",
+      "tme": "Consulting"
     },
     "card": {
-      "lessons": "lessons",
-      "students": "students",
-      "certificate": "Certificate"
+      "lessons": "modules",
+      "students": "active users",
+      "certificate": "Certification"
     },
     "items": {
-      "frontend_react": "Frontend (React.js)",
-      "backend_python": "Backend (Python)",
-      "smm": "SMM & Marketing",
-      "graphic_design": "Graphic Design",
-      "english": "English for IT",
-      "qa": "QA Testing"
+      "frontend_react": "Web Development",
+      "backend_python": "Cloud Solutions",
+      "smm": "Digital Strategy",
+      "graphic_design": "UI/UX Design",
+      "english": "Corporate Training",
+      "qa": "Quality Assurance"
     }
   },
   "hub": {
-    "title": "Our Products",
-    "subtitle": "The Omuz ecosystem - for educational growth and modern management.",
+    "title": "Our Ecosystem",
+    "subtitle": "Connecting technology, education, and business management.",
     "online": {
       "title": "Online Omuz",
-      "desc": "Online learning platform for mastering IT professions.",
-      "btn": "Learn More"
+      "desc": "Digital platform for education and corporate training.",
+      "btn": "Explore"
     },
     "crm": {
       "title": "Omuz CRM",
-      "desc": "Management system for training centers and academies.",
-      "btn": "Learn More"
-    }
+      "desc": "Enterprise resource planning for educational centers.",
+      "btn": "Explore"
+    },
+    "alt_omuz": "Omuz"
   },
   "product_online": {
     "title": "Online Omuz",
-    "desc": "Let's master future professions together.",
+    "desc": "Empowering continuous learning and professional development.",
     "features": [
-      "High-quality online courses",
-      "Certificates upon completion",
-      "Professional and experienced mentors",
-      "280+ successful graduates"
+      "Scalable learning infrastructure",
+      "Corporate training modules",
+      "Progress tracking & analytics",
+      "Accessible anywhere, anytime"
     ],
-    "cta": "Visit Site",
-    "back": "Go Back"
+    "cta": "Visit Platform",
+    "back": "Back to Home",
+    "features_list": [
+      "Video conferences",
+      "Interactive lessons",
+      "Upload materials",
+      "Grading system",
+      "Lesson recordings",
+      "Format support"
+    ]
   },
   "product_crm": {
     "title": "Omuz CRM",
-    "desc": "Complete solution for educational business management.",
+    "desc": "Streamline your educational business operations.",
     "features": [
-      "Student database management",
-      "Payment control system",
-      "Detailed reports and analytics",
-      "Schedule and mentor management"
+      "Student & Staff Database",
+      "Financial Automation",
+      "Advanced Reporting",
+      "Schedule Optimization"
     ],
-    "cta": "Visit Site",
-    "back": "Go Back"
+    "cta": "Get Started",
+    "back": "Back to Home"
   },
   "contact_section": {
-    "title": "Get answers to your questions",
-    "subtitle": "Leave your details, our specialists will contact you.",
+    "title": "Ready to Innovate?",
+    "subtitle": "Leave your details, and our specialists will contact you to discuss your project.",
     "form": {
       "name": "Full Name",
       "phone": "Phone Number",
       "email": "Email",
-      "submit": "Send Request"
+      "submit": "Submit Request"
     }
+  },
+  "request_form": {
+    "title": "Submit Request",
+    "subtitle": "Unsure which solution to choose? Fill out the form and we'll help you.",
+    "name_placeholder": "Your Name",
+    "phone_placeholder": "Phone Number",
+    "email_placeholder": "Email Address",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Request sent successfully!"
   },
   "footer": {
-    "rights": "© 2024 Omuz.tj. All rights reserved.",
+    "rights": "© 2026 Omuz Company. All rights reserved.",
     "contact_us": "Contact Us",
     "home": "Home",
-    "courses": "Courses",
+    "courses": "Services",
     "about": "About Us",
-    "description": "Learn programming from the best teachers in Tajikistan and abroad.",
-    "info": "Information",
-    "contact": "Contact"
+    "description": "Premiere software solutions and educational platforms in Tajikistan.",
+    "info": "Company",
+    "contact": "Contacts",
+    "address": "Dushanbe, Tajikistan",
+    "phone": "(+992) 111 585 050",
+    "email": "online@omuz.tj",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "consultation": {
+    "title": "Free Consultation",
+    "subtitle": "Leave your contact details, we will call you back and try to answer your questions",
+    "name_placeholder": "name",
+    "phone_placeholder": "90 123 45 67",
+    "agreement": "I agree to the processing of personal data.",
+    "submit": "Send",
+    "success": "Request sent successfully!",
+    "sending": "Sending..."
   },
   "about_section": {
-    "title": "Who We Are",
-    "subtitle": "Building the future of IT education in Tajikistan",
-    "desc_1": "Omuz.tj is the leading platform for IT education and management. We combine modern teaching methodologies with advanced technology to create the best learning experience.",
-    "desc_2": "Our ecosystem includes online courses, a CRM for educational centers, and a strong community of mentors and students.",
+    "title": "About Omuz Company",
+    "subtitle": "Driving Digital Transformation in Tajikistan",
+    "desc_1": "Omuz Company is a premier technology provider, specializing in software development, educational platforms, and business automation systems.",
     "stats": {
-      "students": "Students",
-      "mentors": "Mentors",
-      "partners": "Partners"
-    }
+      "partners": "Partners",
+      "students": "Active Students",
+      "mentors": "Expert Mentors"
+    },
+    "badge": "Digital Innovation",
+    "desc_1_sub": "We build communities and foster growth through education and technology.",
+    "desc_2_sub": "Collaborating with industry leaders to deliver world-class solutions.",
+    "learn_more": "Learn More",
+    "alt_team": "Team collaboration",
+    "stat_1_val": "5000+",
+    "stat_2_val": "50+",
+    "stat_3_val": "20+"
   },
   "features_section": {
-    "title": "Why Choose Omuz.tj?",
-    "subtitle": "We provide everything you need for successful learning and teaching.",
+    "title": "Our Core Competencies",
+    "subtitle": "We deliver excellence through technology and expertise.",
+    "badge": "Core Advantages",
     "cards": {
       "mentors": {
-        "title": "Expert Mentors",
-        "desc": "Learn from industry professionals with real-world experience."
+        "title": "Expert Engineers",
+        "desc": "Work with a team of senior developers and industry specialists."
       },
       "schedule": {
-        "title": "Flexible Schedule",
-        "desc": "Study at your own pace, anytime and anywhere."
+        "title": "Scalable Solutions",
+        "desc": "Systems designed to grow with your business needs."
       },
       "career": {
-        "title": "Career Support",
-        "desc": "We help with resume building and job placement assistance."
+        "title": "Strategic Growth",
+        "desc": "helping businesses achieve their digital transformation goals."
       },
       "community": {
-        "title": "Strong Community",
-        "desc": "Join a network of like-minded learners and alumni."
+        "title": "Partner Network",
+        "desc": "Access to a wide network of industry partners and resources."
       }
     }
   },
@@ -231,7 +419,23 @@
     "confirm_password_label": "Confirm Password",
     "register_btn": "Create Account",
     "have_account": "Already have an account?",
-    "login": "Sign in"
+    "login": "Sign in",
+    "or_continue_with": "Or continue with",
+    "github": "Github",
+    "google": "Google",
+    "passwords_mismatch": "Passwords do not match"
+  },
+  "not_found": {
+    "title": "404",
+    "subtitle": "Page Not Found",
+    "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "back_home": "Back to Home"
+  },
+  "error_page": {
+    "title": "Something went wrong!",
+    "description": "We apologize for the inconvenience. An unexpected error has occurred.",
+    "retry": "Try again",
+    "go_home": "Go Home"
   },
   "register_page": {
     "join_us": "Join Us",
@@ -240,15 +444,15 @@
     "terms": "By registering, you agree to our Terms of Service and Privacy Policy"
   },
   "cta_section": {
-    "title": "Ready to Transform Your Future?",
-    "subtitle": "Join Omuz.tj today and start your journey towards excellence.",
-    "get_started": "Get Started",
-    "contact": "Contact Us"
+    "title": "Transform Your Business Today",
+    "subtitle": "Join leading companies that trust Omuz for their digital needs.",
+    "get_started": "Partner With Us",
+    "contact": "Contact Sales"
   },
   "login_page": {
     "welcome_back": "Welcome Back",
     "sign_in": "Sign In",
     "enter_credentials": "Enter your credentials to access your account",
-    "security": "Protected by Omuz.tj Security"
+    "security": "Protected by Omuz Security"
   }
 }

@@ -23,7 +23,7 @@ export function RegisterForm() {
     confirmPassword: z.string().min(6),
   }).refine((data) => data.password === data.confirmPassword, {
     path: ["confirmPassword"],
-    message: "Passwords do not match", // This should ideally be translated but keeping simple for now
+    message: t("passwords_mismatch"),
   })
 
   type FormValues = z.infer<typeof formSchema>

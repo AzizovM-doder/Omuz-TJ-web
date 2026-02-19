@@ -46,7 +46,7 @@ export function EcosystemBeam() {
             <Circle ref={div1Ref} className="h-16 w-16 md:h-20 md:w-20 border-sky-100 dark:border-sky-900 bg-white dark:bg-slate-950">
                <Globe className="h-6 w-6 md:h-8 md:w-8 text-sky-600" />
             </Circle>
-            <span className="text-sm font-bold text-center">Online Omuz</span>
+            <span className="text-sm font-bold text-center">{t('online.title')}</span>
           </div>
 
           {/* Omuz Center */}
@@ -55,7 +55,7 @@ export function EcosystemBeam() {
                <div className="relative h-full w-full flex items-center justify-center bg-white dark:bg-black rounded-full border shadow-2xl p-4">
                   <Image 
                     src="/omuz.svg" 
-                    alt="Omuz" 
+                    alt={t("alt_omuz")} 
                     width={80} 
                     height={80} 
                     className="w-full h-auto dark:invert"
@@ -69,7 +69,7 @@ export function EcosystemBeam() {
              <Circle ref={div2Ref} className="h-16 w-16 md:h-20 md:w-20 border-purple-100 dark:border-purple-900 bg-white dark:bg-slate-950">
                  <BarChart3 className="h-6 w-6 md:h-8 md:w-8 text-purple-600" />
              </Circle>
-             <span className="text-sm font-bold text-center">Omuz CRM</span>
+             <span className="text-sm font-bold text-center">{t('crm.title')}</span>
            </div>
 
         </div>

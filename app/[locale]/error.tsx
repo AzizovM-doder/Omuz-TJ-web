@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from 'next-intl';
 
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,7 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const t = useTranslations('error_page');
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
@@ -25,17 +27,17 @@ export default function Error({
         </div>
       </div>
       
-      <h2 className="text-3xl font-bold mb-4 text-center">Something went wrong!</h2>
+      <h2 className="text-3xl font-bold mb-4 text-center">{t('title')}</h2>
       <p className="text-muted-foreground mb-8 text-center max-w-md">
-        We apologize for the inconvenience. An unexpected error has occurred.
+        {t('description')}
       </p>
       
       <div className="flex gap-4">
         <Button onClick={() => reset()} className="bg-sky-600 hover:bg-sky-700 text-white rounded-full">
-          Try again
+          {t('retry')}
         </Button>
         <Button variant="outline" onClick={() => window.location.href = '/'} className="rounded-full">
-          Go Home
+          {t('go_home')}
         </Button>
       </div>
     </div>

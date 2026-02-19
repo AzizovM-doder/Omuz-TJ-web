@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
-import { ArrowRight, Sparkles, Zap, Shield } from "lucide-react"
+import { ArrowRight, Globe, Shield, TrendingUp, Building2, Server, Smartphone, Laptop } from "lucide-react"
 
 export function HeroSlider() {
   const t = useTranslations("hero")
@@ -18,154 +18,144 @@ export function HeroSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 6000) // Slightly longer duration for reading
+    }, 10000)
     return () => clearInterval(timer)
   }, [slides.length])
 
+  // Lighter, fresher gradients for the "photo-like" simple look
   const gradients = [
-    "from-violet-600 via-indigo-600 to-purple-600",
-    "from-blue-600 via-sky-600 to-cyan-600", 
-    "from-emerald-600 via-teal-600 to-green-600"
+    "from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800",
+    "from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950", 
+    "from-purple-50 to-pink-50 dark:from-purple-950 dark:to-pink-950"
+  ]
+  
+  const textTheme = [
+    "text-slate-900 dark:text-white",
+    "text-blue-900 dark:text-blue-100",
+    "text-purple-900 dark:text-purple-100"
   ]
 
-  const icons = [Sparkles, Zap, Shield]
+  const icons = [Globe, Building2, Shield]
   const CurrentIcon = icons[currentSlide]
 
   return (
-    <section className="relative h-[100svh] lg:h-[690px] min-h-[600px] w-full overflow-hidden bg-slate-950 flex flex-col justify-center">
-      {/* Animated Background Mesh */}
-      <div className="absolute inset-0 opacity-30">
-        <div className={`absolute inset-0 bg-gradient-to-br ${gradients[currentSlide]} transition-colors duration-1000 ease-in-out opacity-20`} />
-        
-        {/* Mobile-optimized blobs */}
-        <div className="absolute top-0 -left-4 w-48 h-48 md:w-72 md:h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
-        <div className="absolute top-0 -right-4 w-48 h-48 md:w-72 md:h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
-        <div className="absolute -bottom-8 left-20 w-48 h-48 md:w-72 md:h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
-      </div>
-
-      <div className="container max-w-7xl mx-auto px-4 h-full flex items-center relative z-10">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full"
-          >
-            {/* Text Content */}
-            <div className="space-y-8 text-center lg:text-left">
+    <section className="py-4 md:py-8 lg:py-12 w-full flex justify-center">
+      <div className="container max-w-7xl px-4">
+         {/* Main Rounded Card Container */}
+         <div className="relative w-full h-[600px] lg:h-[650px] rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500">
+            
+            <AnimatePresence mode="wait">
               <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-sm font-medium mx-auto lg:mx-0"
+                key={currentSlide}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                className={`absolute inset-0 bg-gradient-to-br ${gradients[currentSlide]} flex items-center`}
               >
-                <CurrentIcon className="w-4 h-4" />
-                <span>Omuz.tj v2.0 Platform</span>
-              </motion.div>
+                  {/* Background Patterns */}
+                  <div className="absolute inset-0 opacity-[0.03] bg-[url('/grid.svg')]" />
+                  <div className={`absolute -right-20 -top-20 w-96 h-96 rounded-full blur-3xl opacity-20 ${currentSlide === 0 ? 'bg-blue-500' : currentSlide === 1 ? 'bg-indigo-500' : 'bg-purple-500'}`} />
+                  <div className={`absolute -left-20 -bottom-20 w-96 h-96 rounded-full blur-3xl opacity-20 ${currentSlide === 0 ? 'bg-emerald-500' : currentSlide === 1 ? 'bg-blue-500' : 'bg-pink-500'}`} />
 
-              <div className="space-y-4">
-                <motion.h1
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
-                  className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight tracking-tight"
-                >
-                  {t(`slides.${currentSlide}.title`)}
-                </motion.h1>
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-xl text-white/70 max-w-xl mx-auto lg:mx-0 leading-relaxed"
-                >
-                  {t(`slides.${currentSlide}.subtitle`)}
-                </motion.p>
-              </div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-              >
-                <InteractiveHoverButton 
-                  className={`bg-gradient-to-r ${gradients[currentSlide]} hover:brightness-110 text-white border-0 h-14 w-auto px-8 text-lg rounded-full shadow-lg shadow-white/10 transition-all duration-300`}
-                >
-                  <span className="flex items-center gap-2">
-                    {t(`slides.${currentSlide}.cta`)}
-                    {/* <ArrowRight className="h-5 w-5" /> */}
-                  </span>
-                </InteractiveHoverButton>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="h-14 px-8 text-lg rounded-full border-white/20 text-black hover:bg-white/10 hover:text-white backdrop-blur-sm"
-                >
-                  Learn More
-                </Button>
-              </motion.div>
-            </div>
-
-            {/* Visual Element (3D/Illustration Placeholder) */}
-            <motion.div
-              initial={{ opacity: 0, x: 50, rotateY: 20 }}
-              animate={{ opacity: 1, x: 0, rotateY: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="hidden lg:flex justify-center items-center perspective-1000"
-            >
-              <div className="relative w-full max-w-[600px] aspect-square">
-                 {/* Main layered card effect */}
-                 <div className={`absolute inset-0 bg-gradient-to-br ${gradients[currentSlide]} rounded-[3rem] opacity-20 blur-3xl`} />
-                 
-                 <div className="relative w-full h-full bg-white/5 backdrop-blur-2xl rounded-[2rem] border border-white/10 shadow-2xl p-8 flex flex-col justify-between overflow-hidden group hover:border-white/20 transition-colors">
-                    <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-colors duration-500" />
+                  <div className="container px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 w-full">
                     
-                    <div className="relative z-10">
-                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-white/20 to-transparent border border-white/10 flex items-center justify-center mb-8">
-                        <CurrentIcon className="w-8 h-8 text-white" />
-                      </div>
-                      <div className="space-y-4">
-                        <div className="h-4 w-2/3 bg-white/10 rounded-full" />
-                        <div className="h-4 w-1/2 bg-white/10 rounded-full" />
-                        <div className="h-32 w-full bg-gradient-to-br from-white/5 to-transparent rounded-xl mt-8 border border-white/5" />
-                      </div>
+                    {/* Left Content */}
+                    <div className="space-y-8 text-center lg:text-left">
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                            className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/40 dark:bg-white/10 backdrop-blur-md border border-white/20 text-sm font-semibold shadow-sm ${textTheme[currentSlide]}`}
+                        >
+                            <span className="flex h-2 w-2 rounded-full bg-current opacity-75 animate-pulse" />
+                            <span>{t("badge")}</span>
+                        </motion.div>
+
+                        <div className="space-y-4">
+                            <motion.h1 
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3, duration: 0.6 }}
+                                className={`text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] ${textTheme[currentSlide]}`}
+                            >
+                                {t(`slides.${currentSlide}.title`)}
+                            </motion.h1>
+                            
+                            <motion.p 
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.6 }}
+                                className={`text-lg md:text-xl opacity-80 max-w-lg mx-auto lg:mx-0 font-medium ${textTheme[currentSlide]}`}
+                            >
+                                {t(`slides.${currentSlide}.subtitle`)}
+                            </motion.p>
+                        </div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5 }}
+                            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                        >
+                            <Button size="lg" className="h-14 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-white text-black hover:bg-white/90 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-800">
+                                {t(`slides.${currentSlide}.cta`)}
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </motion.div>
                     </div>
-                 </div>
 
-                 {/* Floating elements */}
-                 <motion.div 
-                    animate={{ y: [0, -20, 0] }}
-                    transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                    className="absolute -right-8 top-1/4 w-24 h-24 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 shadow-xl flex items-center justify-center"
-                 >
-                    <div className="text-3xl">🚀</div>
-                 </motion.div>
-                 <motion.div 
-                    animate={{ y: [0, 20, 0] }}
-                    transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-                    className="absolute -left-8 bottom-1/4 w-20 h-20 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 shadow-xl flex items-center justify-center"
-                 >
-                    <div className="text-3xl">💎</div>
-                 </motion.div>
-              </div>
-            </motion.div>
-          </motion.div>
-        </AnimatePresence>
+                    {/* Right Visuals - 3D Floating Elements */}
+                    <div className="hidden lg:flex justify-center items-center relative h-96">
+                        <motion.div
+                           initial={{ scale: 0.8, opacity: 0, rotateY: 30 }}
+                           animate={{ scale: 1, opacity: 1, rotateY: 0 }}
+                           transition={{ type: "spring", duration: 1.5 }}
+                           className="relative w-full max-w-md aspect-square"
+                        >
+                            {/* Central Hero Image/Icon Container */}
+                            <div className="absolute inset-0 bg-gradient-to-tr from-white/40 to-white/10 dark:from-white/10 dark:to-transparent rounded-[3rem] backdrop-blur-2xl border border-white/20 shadow-2xl flex items-center justify-center">
+                                <CurrentIcon className={`w-32 h-32 ${textTheme[currentSlide]} opacity-90 drop-shadow-2xl`} />
+                            </div>
 
-        {/* Progress Indicators */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-4">
-          {slides.map((index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className="group relative h-2 w-16 bg-white/10 rounded-full overflow-hidden transition-all hover:h-4"
-            >
-              <div 
-                className={`absolute inset-0 bg-white transition-all duration-300 ${
-                  currentSlide === index ? "w-full opacity-100" : "w-0 opacity-0 group-hover:opacity-50"
-                }`} 
-              />
-            </button>
-          ))}
-        </div>
+                            {/* Floating Orbits */}
+                            <motion.div 
+                                animate={{ y: [-15, 15, -15], rotate: [0, 5, 0] }}
+                                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                                className="absolute -top-8 -right-8 w-24 h-24 bg-white dark:bg-slate-800 rounded-3xl shadow-xl flex items-center justify-center"
+                            >
+                                <Laptop className="w-10 h-10 text-blue-500" />
+                            </motion.div>
+
+                            <motion.div 
+                                animate={{ y: [15, -15, 15], rotate: [0, -5, 0] }}
+                                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                                className="absolute -bottom-8 -left-8 w-20 h-20 bg-white dark:bg-slate-800 rounded-3xl shadow-xl flex items-center justify-center"
+                            >
+                                <Smartphone className="w-8 h-8 text-purple-500" />
+                            </motion.div>
+                        </motion.div>
+                    </div>
+
+                  </div>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Bottom Pagination Dots */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
+                {slides.map((idx) => (
+                    <button
+                        key={idx}
+                        onClick={() => setCurrentSlide(idx)}
+                        className={`transition-all duration-300 rounded-full ${
+                             currentSlide === idx 
+                             ? "w-12 h-2 bg-slate-800 dark:bg-white" 
+                             : "w-2 h-2 bg-slate-400/50 hover:bg-slate-400"
+                        }`}
+                    />
+                ))}
+            </div>
+         </div>
       </div>
     </section>
   )

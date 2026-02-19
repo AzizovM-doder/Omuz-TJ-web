@@ -20,7 +20,7 @@ export function PartnersMarquee() {
   
   return (
     <section className="py-20 bg-background overflow-hidden">
-      <div className="container mx-auto px-4 mb-12">
+      <div className="container max-w-7xl mx-auto px-4 mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground">
           {t("title")}
         </h2>
@@ -41,7 +41,7 @@ export function PartnersMarquee() {
 
 function PartnerCard({ name, logo }: { name: string, logo: string }) {
   return (
-    <div className="flex h-24 w-48 items-center justify-center rounded-xl border bg-card text-card-foreground shadow-sm px-6 mx-4 hover:border-sky-500 transition-colors">
+    <div className="flex h-24 w-48 items-center justify-center rounded-xl border bg-card text-card-foreground shadow-sm px-6 mx-4 hover:border-blue-500 transition-colors">
       <div className="relative w-full h-full flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
         <Image 
           src={logo} 

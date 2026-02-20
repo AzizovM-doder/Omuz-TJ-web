@@ -5,7 +5,7 @@
     "products": "Products",
     "services": "Services",
     "crm": "CRM",
-    "online": "Online Omuz",
+    "online": "Online",
     "contact": "Contact",
     "login": "Login",
     "view_details": "View details",
@@ -53,9 +53,9 @@
     "map_implementation": "Map Component Implementation"
   },
   "products_crm": {
-    "title": "Omuz CRM",
-    "subtitle": "The Ultimate Management System for Enterprises",
-    "description": "Streamline your educational center's operations with our all-in-one platform. From student enrollment to financial reporting, Omuz CRM handles it all.",
+    "title": "CRM",
+    "subtitle": "Academy Management Platform",
+    "description": "Streamline operations with Omuz CRM.",
     "cta": "Get Started",
     "demo": "Book a Demo",
     "features_title": "Everything You Need to Run Your Center",
@@ -63,15 +63,15 @@
     "features": {
       "analytics": {
         "title": "Advanced Analytics",
-        "desc": "Real-time insights into enrollment, revenue, and retention rates."
+        "desc": "Real-time insights into enrollment, attendance, and student performance."
       },
       "scheduling": {
         "title": "Smart Scheduling",
         "desc": "Automated class scheduling and room allocation management."
       },
       "payments": {
-        "title": "Automated Finance",
-        "desc": "Track tuition payments, generate invoices, and manage payroll."
+        "title": "Performance Tracking",
+        "desc": "Track student grades, generate progress reports, and manage lesson plans."
       },
       "students": {
         "title": "Student Portal",
@@ -87,12 +87,13 @@
       }
     },
     "stats": {
-      "centers": "Education Centers",
-      "users": "Active Users",
+      "centers": "Academies",
+      "users": "Active Teachers",
       "uptime": "Uptime Guarantee",
-      "transactions": "Transactions"
+      "transactions": "Students Tracked"
     },
     "interactive_dashboard": "Interactive Dashboard",
+    "badge": "Omuz CRM Platform",
     "faq_title": "Frequently Asked Questions",
     "faq": {
       "q1": "Is Omuz CRM cloud-based?",
@@ -102,10 +103,25 @@
       "q3": "Do you offer training?",
       "a3": "We provide comprehensive onboarding and training for your entire team."
     },
+    "integrations_title": "Seamless Integrations",
+    "integrations_subtitle": "Connect Omuz CRM with your favorite tools to automate your workflow.",
+    "cta_banner_title": "Transform Your Academy",
+    "cta_banner_subtitle": "Optimize Your Workflow",
+    "cta_banner_btn": "Get Started",
+    "workflow_title": "Setup in Minutes",
+    "workflow_subtitle": "Instant Streamlined Onboarding",
+    "workflow": {
+      "step1_title": "1. Import Your Data",
+      "step1_desc": "Easily upload an Excel file containing your current students, staff, and schedules.",
+      "step2_title": "2. Configure Branches",
+      "step2_desc": "Set up your physical locations, rooms, and specific billing rules in a few clicks.",
+      "step3_title": "3. Launch & Invite",
+      "step3_desc": "Send automated email or SMS invites to your team and students to download the app."
+    },
     "items": {
       "0": {
-        "q": "How does the CRM help my center?",
-        "a": "Our CRM automates student tracking, scheduling, and finance, allowing you to focus on education rather than administration."
+        "q": "How does the CRM help my academy?",
+        "a": "Our CRM automates student tracking, scheduling, and grading, allowing teachers to focus on education rather than administration."
       },
       "1": {
         "q": "Is the online platform secure?",
@@ -125,24 +141,24 @@
       },
       "5": {
         "q": "Is there a free trial?",
-        "a": "We offer a 14-day free trial so you can experience all the features before committing."
+        "a": "We offer a comprehensive demo so you can experience all the features."
       }
     },
     "cta_section": {
-      "title": "Ready to Optimize Your Business?",
-      "subtitle": "Join over 50+ educational centers using Omuz CRM today.",
-      "btn": "Start Free Trial"
+      "title": "Optimize Your Business",
+      "subtitle": "Join 50+ Centers",
+      "btn": "Get Started Now"
     },
     "link": "omuz.tj/crm"
   },
   "products_online": {
-    "title": "Online Omuz",
+    "title": "Online",
     "subtitle": "Digital Learning & Corporate Training Platform",
     "description": "Unlock your potential with high-quality courses taught by industry experts. Learn coding, design, marketing, and more.",
     "cta": "Start Learning",
     "browse": "Browse Courses",
     "courses_title": "Explore Top Categories",
-    "courses_subtitle": "Find the perfect course to upgrade your skills.",
+    "courses_subtitle": "Learn from experts",
     "categories": {
       "dev": "Development",
       "design": "Design",
@@ -150,8 +166,39 @@
       "business": "Business"
     },
     "view_all": "View All Categories",
-    "trending": "Trending Now",
+    "trending_title": "Trending Courses",
+    "ecosystem_title": "Interactive Learning Ecosystem",
+    "ecosystem_subtitle": "Master skills continuously.",
+    "ecosystem_core": "Core",
+    "ecosystem_nodes": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Design",
+      "marketing": "Marketing",
+      "business": "Business",
+      "analytics": "Analytics"
+    },
+    "join_title": "Join 10,000+ Students",
+    "join_subtitle": "Start digital journey.",
     "course_suffix": "Courses",
+    "badge": "Omuz Learning Environment",
+    "platform_text": "Platform",
+    "certified": "Certified",
+    "upon_completion": "Upon completion",
+    "trending_courses": {
+      "1": {
+        "category": "Development",
+        "title": "Full Stack Web Development Bootcamp"
+      },
+      "2": {
+        "category": "Business",
+        "title": "Digital Marketing Strategy Masterclass"
+      },
+      "3": {
+        "category": "Design",
+        "title": "UI/UX Design Principals for Beginners"
+      }
+    },
     "benefits_title": "Why Choose Online Omuz?",
     "benefits": {
       "expert": {
@@ -169,6 +216,34 @@
       "community": {
         "title": "Learning Community",
         "desc": "Join thousands of learners in our active community forum."
+      }
+    },
+    "how_it_works_title": "Your Learning Journey",
+    "how_it_works": {
+      "step1_title": "Enroll",
+      "step1_desc": "Select from hundreds of expert-led courses and get instant access to the material.",
+      "step2_title": "Learn & Practice",
+      "step2_desc": "Watch high-quality videos, complete interactive assignments, and build real projects.",
+      "step3_title": "Get Certified",
+      "step3_desc": "Pass the final exams to earn a verified certificate and showcase your new skills."
+    },
+    "testimonials_title": "What Our Students Say",
+    "testimonials_subtitle": "Join thousands of learners achieving their goals with Omuz.",
+    "testimonials": {
+      "1": {
+        "text": "The full-stack course completely transformed my career. I went from knowing zero code to landing a junior developer role in 6 months.",
+        "author": "Alisher N.",
+        "role": "Software Engineer"
+      },
+      "2": {
+        "text": "The UI/UX design masterclass is top-notch. The instructors explain complex concepts in a very understandable way.",
+        "author": "Zarina M.",
+        "role": "Product Designer"
+      },
+      "3": {
+        "text": "I loved the community aspect. Getting feedback from both peers and instructors helped me improve incredibly fast.",
+        "author": "Rustam D.",
+        "role": "Marketing Specialist"
       }
     },
     "stats": {
@@ -195,12 +270,12 @@
         "cta": "Our Services"
       },
       {
-        "title": "Omuz CRM & Management",
-        "subtitle": "Comprehensive management systems for educational and corporate institutions.",
+        "title": "CRM & Management",
+        "subtitle": "Comprehensive management systems for academies and educational institutions.",
         "cta": "View Products"
       },
       {
-        "title": "Online Omuz Platform",
+        "title": "Online Platform",
         "subtitle": "A premier platform for accessible and high-quality digital education.",
         "cta": "Learn More"
       }
@@ -247,8 +322,8 @@
     "jamshed_role": "CEO, TechForward",
     "malika": "The corporate training modules from Online Omuz significantly improved our team's technical capabilities.",
     "malika_role": "HR Director, Bank Eskhata",
-    "davron": "Omuz CRM's financial automation features meet the highest enterprise standards. Highly recommended.",
-    "davron_role": "Finance Manager, Somon Air"
+    "davron": "Omuz CRM's academic tracking and grading features meet the highest enterprise standards. Highly recommended.",
+    "davron_role": "Head Teacher, Somon Air"
   },
   "courses_section": {
     "title": "Key Areas of Expertise",
@@ -277,19 +352,23 @@
     "title": "Our Ecosystem",
     "subtitle": "Connecting technology, education, and business management.",
     "online": {
-      "title": "Online Omuz",
+      "title": "Omuz",
       "desc": "Digital platform for education and corporate training.",
-      "btn": "Explore"
+      "btn": "Explore",
+      "hint": "Explore Platform",
+      "headline": "Empower Your Learning"
     },
     "crm": {
-      "title": "Omuz CRM",
-      "desc": "Enterprise resource planning for educational centers.",
-      "btn": "Explore"
+      "title": "CRM",
+      "desc": "Management platform for academies and student tracking.",
+      "btn": "Explore",
+      "hint": "Explore Management",
+      "headline": "Streamline Your Operations"
     },
     "alt_omuz": "Omuz"
   },
   "product_online": {
-    "title": "Online Omuz",
+    "title": "Omuz",
     "desc": "Empowering continuous learning and professional development.",
     "features": [
       "Scalable learning infrastructure",
@@ -309,12 +388,12 @@
     ]
   },
   "product_crm": {
-    "title": "Omuz CRM",
-    "desc": "Streamline your educational business operations.",
+    "title": "CRM",
+    "desc": "Streamline your educational business operations and student records.",
     "features": [
       "Student & Staff Database",
-      "Financial Automation",
-      "Advanced Reporting",
+      "Grade & Attendance Tracking",
+      "Academic Reporting",
       "Schedule Optimization"
     ],
     "cta": "Get Started",
@@ -341,7 +420,7 @@
     "success": "Request sent successfully!"
   },
   "footer": {
-    "rights": "© 2026 Omuz Company. All rights reserved.",
+    "rights": "Omuz Company. All rights reserved.",
     "contact_us": "Contact Us",
     "home": "Home",
     "courses": "Services",
@@ -357,13 +436,16 @@
   },
   "consultation": {
     "title": "Free Consultation",
-    "subtitle": "Leave your contact details, we will call you back and try to answer your questions",
+    "subtitle": "Leave your details",
     "name_placeholder": "name",
-    "phone_placeholder": "90 123 45 67",
+    "phone_placeholder": "+992 (XX) XXX-XXXX",
+    "email_placeholder": "Email Address",
     "agreement": "I agree to the processing of personal data.",
     "submit": "Send",
     "success": "Request sent successfully!",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "join_students_title": "Join 10,000+ Students",
+    "join_students_subtitle": "Start digital journey."
   },
   "about_section": {
     "title": "About Omuz Company",

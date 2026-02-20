@@ -25,7 +25,7 @@ export function ProductsSection() {
   ]
 
   return (
-    <section id="products" className="py-20 bg-accent/30">
+    <section id="products" className="py-20 bg-red bg-accent/30">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-12">
           {t("products_crm.title")} & {t("products_online.title")}

@@ -5,22 +5,22 @@
     "products": "Маҳсулот",
     "services": "Хизматрасониҳо",
     "crm": "CRM",
-    "online": "Online Omuz",
+    "online": "Online",
     "contact": "Тамос",
     "login": "Ворид шудан",
     "view_details": "Муфассал",
     "theme": "Мавзӯъ"
   },
   "about_page": {
-    "title": "We Are Omuz Company",
-    "subtitle": "Innovating Technology for the Future",
-    "story_title": "Our Story",
-    "story_desc": "Founded with a vision to revolutionize the tech landscape in Tajikistan, Omuz has grown from a visionary startup to a leading software and educational ecosystem.",
-    "values_title": "Our Values",
+    "title": "Дар бораи ширкати Omuz",
+    "subtitle": "Технологияҳои инноватсионӣ барои оянда",
+    "story_title": "Таърихи мо",
+    "story_desc": "Omuz бо ҳадафи инқилоб дар фазои технологии Тоҷикистон таъсис ёфта, аз як стартапи дурбин ба як экосистемаи пешрафтаи нармафзор ва таълим табдил ёфт.",
+    "values_title": "Арзишҳои мо",
     "values": {
-      "innovation": "Innovation",
-      "community": "Partnership",
-      "quality": "Excellence"
+      "innovation": "Инноватсия",
+      "community": "Шарикӣ",
+      "quality": "Бартарӣ"
     },
     "team_title": "Коршиносони Мо",
     "team_subtitle": "Бо зеҳнҳои паси Omuz шинос шавед.",
@@ -55,59 +55,75 @@
     "map_implementation": "Татбиқи харита"
   },
   "products_crm": {
-    "title": "Omuz CRM",
-    "subtitle": "Системаи идоракунии мукаммал барои корхонаҳо",
-    "description": "Фаъолияти маркази таълимии худро бо платформаи ҳамаҷонибаи мо оптимизатсия кунед. Аз қабули донишҷӯён то ҳисоботи молиявӣ — Omuz CRM ҳамаашро иҷро мекунад.",
-    "cta": "Оғоз кардан",
-    "demo": "Дархости демо",
-    "features_title": "Ҳама чиз барои идоракунии маркази шумо",
-    "features_subtitle": "Воситаҳои пурқувват, ки махсус барои муассисаҳои таълимӣ сохта шудаанд.",
+    "title": "CRM",
+    "subtitle": "Системаи идоракунии академия",
+    "description": "Кори муассисаи таълимии худро бо платформаи махсуси мо осон кунед. Аз қабули донишҷӯён то назорати давомот ва пешрафт — хуллас Omuz CRM ҳамаи инро идора мекунад.",
+    "cta": "Оғоз намудан",
+    "demo": "Фармоиши намоиш",
+    "features_title": "Ҳамаи он чизе, ки барои идоракунӣ лозим аст",
+    "features_subtitle": "Воситаҳои пуриқтидор, махсус барои муассисаҳои таълимӣ.",
     "features": {
       "analytics": {
-        "title": "Таҳлили пешрафта",
-        "desc": "Маълумот дар вақти воқеӣ оид ба қабул, даромад ва нигоҳдорӣ."
+        "title": "Таҳлилгарии пешрафта",
+        "desc": "Таҳлили воқеии бақайдгирӣ, даромад ва давомот."
       },
       "scheduling": {
         "title": "Ҷадвали ҳушманд",
-        "desc": "Идоракунии автоматии ҷадвали дарсҳо ва тақсимоти синфхонаҳо."
+        "desc": "Тартибдиҳии автоматии ҷадвали дарсҳо ва идораи синфхонаҳо."
       },
       "payments": {
-        "title": "Автоматикунонии молия",
-        "desc": "Назорати пардохтҳо, эҷоди ҳисобномаҳо ва идоракунии маош."
+        "title": "Назорати пешрафт",
+        "desc": "Пешрафти донишҷӯёнро назорат кунед, ҳисоботҳо таҳия кунед ва нақшаҳои дарсиро идора кунед."
       },
       "students": {
         "title": "Портали донишҷӯён",
-        "desc": "Дастрасӣ барои донишҷӯён ба баҳоҳо ва давомот."
+        "desc": "Дастрасии махсус ба баҳоҳо ва маводҳо барои донишҷӯён."
       },
       "mobile": {
-        "title": "Барномаи мобилӣ",
-        "desc": "Бизнеси худро бо барномаҳои iOS ва Android идора кунед."
+        "title": "Замимаи мобилӣ",
+        "desc": "Тиҷоратро тавассути замимаҳои iOS ва Android дар роҳ идора кунед."
       },
       "support": {
         "title": "Дастгирии 24/7",
-        "desc": "Дастаи дастгирии техникӣ ҳамеша омодаи кӯмак аст."
+        "desc": "Дастгирии техникии махсус, омода аст дар ҳар вақт кӯмак кунад."
       }
     },
     "stats": {
-      "centers": "Марказҳои таълимӣ",
-      "users": "Истифодабарандагони фаъол",
-      "uptime": "Кафолати кори доимӣ",
-      "transactions": "Амалиётҳо"
+      "centers": "Академияҳо",
+      "users": "Устодони фаъол",
+      "uptime": "Кафолати Фаъолият",
+      "transactions": "Донишҷӯёни фарогирифташуда"
     },
     "interactive_dashboard": "Панели интерактивӣ",
-    "faq_title": "Саволҳои маъмул",
+    "badge": "Платформаи Omuz CRM",
+    "faq_title": "Саволҳои зиёд пурсидашаванда",
     "faq": {
-      "q1": "Оё Omuz CRM дар абр (cloud) ҷойгир аст?",
-      "a1": "Бале, Omuz CRM пурра дар абр аст, ки дастрасии бехатарро аз ҳама ҷо таъмин мекунад.",
-      "q2": "Оё ман метавонам маълумоти худро интиқол диҳам?",
-      "a2": "Албатта. Мо хизматрасонии ройгони интиқоли маълумотро пешниҳод мекунем.",
+      "q1": "Оё CRM платформаи абрӣ аст?",
+      "a1": "Бале, CRM пурра платформаи абрӣ буда, дастрасии бехатарро аз ҳама ҷо таъмин мекунад.",
+      "q2": "Оё метавонам маълумотҳои худро интиқол диҳам?",
+      "a2": "Албатта. Мо хизматрасониҳои ройгонро барои интиқоли маълумот пешниҳод мекунем.",
       "q3": "Оё шумо омӯзиш медиҳед?",
       "a3": "Мо омӯзиши пурраро барои дастаи шумо пешниҳод мекунем."
     },
+    "integrations_title": "Пайвастшавии бефосила",
+    "integrations_subtitle": "Omuz CRM-ро бо барномаҳои дӯстдоштаи худ барои автоматикунонии кор пайваст кунед.",
+    "cta_banner_title": "Рушди академияи шумо",
+    "cta_banner_subtitle": "Корро беҳтар кунед",
+    "cta_banner_btn": "Оғоз",
+    "workflow_title": "Танзимот дар дақиқаҳо",
+    "workflow_subtitle": "Оғози фаврии академия",
+    "workflow": {
+      "step1_title": "1. Воридоти Маълумот",
+      "step1_desc": "Файли Excel-ро бо донишҷӯён, кормандон ва ҷадвалҳои ҷории худ ба осонӣ бор кунед.",
+      "step2_title": "2. Танзимоти Филиалҳо",
+      "step2_desc": "Ҷойгоҳҳои физикӣ, ҳуҷраҳо ва қоидаҳои пардохтро бо чанд клик танзим кунед.",
+      "step3_title": "3. Оғоз ва Даъватномаҳо",
+      "step3_desc": "Ба даста ва донишҷӯёни худ даъватномаҳои автоматии email ё SMS барои зеркашии барнома фиристед."
+    },
     "items": {
       "0": {
-        "q": "Чӣ гуна CRM ба маркази ман кӯмак мекунад?",
-        "a": "CRM-и мо пайгирии донишҷӯён, ҷадвал ва молияро автоматӣ мекунад, ки ба шумо имкон медиҳад ба таълим тамаркуз кунед."
+        "q": "CRM ба академияи ман чӣ гуна кӯмак мерасонад?",
+        "a": "CRM-и мо назорати донишҷӯён, ҷадвал ва журналҳои пешрафтро автоматӣ мекунад, ки ба устодон имкон медиҳад диққати худро ба таълим равона кунанд."
       },
       "1": {
         "q": "Оё платформаи онлайн бехатар аст?",
@@ -127,62 +143,121 @@
       },
       "5": {
         "q": "Оё версияи озмоишии ройгон ҳаст?",
-        "a": "Мо 14 рӯзи озмоишии ройгонро пешниҳод мекунем."
+        "a": "Мо намоиши пурраи ҳамаи имкониятҳоро пешниҳод мекунем."
       }
     },
     "cta_section": {
-      "title": "Омодаед бизнеси худро беҳтар кунед?",
-      "subtitle": "Ба зиёда аз 50 маркази таълимӣ, ки Omuz CRM-ро истифода мебаранд, ҳамроҳ шавед.",
-      "btn": "Озод санҷед"
+      "title": "Тиҷоратро беҳтар кунед",
+      "subtitle": "Ҳамроҳи мо шавед",
+      "btn": "Ҳоло оғоз кунед"
     },
     "link": "omuz.tj/crm"
   },
   "products_online": {
-    "title": "Online Omuz",
-    "subtitle": "Платформаи таълими рақамӣ ва корпоративӣ",
-    "description": "Потенсиали худро бо курсҳои босифат аз коршиносони соҳа кушоед. Барномасозӣ, дизайн, маркетинг ва ғайраро омӯзед.",
-    "cta": "Омӯзишро оғоз кунед",
-    "browse": "Дидани курсҳо",
-    "courses_title": "Категорияҳои машҳур",
-    "courses_subtitle": "Курси мувофиқро барои рушди малакаҳои худ пайдо кунед.",
+    "title": "Online",
+    "subtitle": "Платформа барои омӯзиш ва тренингҳои корпоративӣ",
+    "description": "Иқтидори худро бо курсҳои босифат аз коршиносони соҳа кашф кунед. Барномасозӣ, дизайн, маркетинг ва ғайраро омӯзед.",
+    "cta": "Оғози омӯзиш",
+    "browse": "Тамошои курсҳо",
+    "courses_title": "Категорияҳои беҳтарини курсҳо",
+    "courses_subtitle": "Аз беҳтаринҳо омӯзед",
     "categories": {
-      "dev": "Барномасозӣ",
+      "dev": "Барноманависӣ",
       "design": "Дизайн",
       "marketing": "Маркетинг",
       "business": "Бизнес"
     },
-    "view_all": "Ҳама категорияҳо",
-    "trending": "Машҳур",
+    "view_all": "Ҳамаи Категорияҳо",
+    "trending_title": "Курсҳои машҳур",
+    "ecosystem_title": "Муҳити интерактивии омӯзиш",
+    "ecosystem_subtitle": "Малакаҳоро муттасил омӯзед.",
+    "ecosystem_core": "Асос",
+    "ecosystem_nodes": {
+      "frontend": "Фронтенд",
+      "backend": "Бэкенд",
+      "design": "Дизайн",
+      "marketing": "Маркетинг",
+      "business": "Бизнес",
+      "analytics": "Аналитика"
+    },
+    "join_title": "Ҳамроҳи 10,000+ донишҷӯён",
+    "join_subtitle": "Оғози сафари рақамӣ",
     "course_suffix": "Курсҳо",
-    "benefits_title": "Чаро Online Omuz-ро интихоб мекунед?",
+    "badge": "Муҳити Омӯзишии Omuz",
+    "platform_text": "Платформа",
+    "certified": "Сертификат",
+    "upon_completion": "Пас аз хатм",
+    "trending_courses": {
+      "1": {
+        "category": "Барномасозӣ",
+        "title": "Курси пурраи таҳияи вебсайтҳо (Full Stack)"
+      },
+      "2": {
+        "category": "Тиҷорат",
+        "title": "Дарси асосии стратегияи маркетинги рақамӣ"
+      },
+      "3": {
+        "category": "Дизайн",
+        "title": "Асосҳои дизайни UI/UX барои шурӯъкунандагон"
+      }
+    },
+    "benefits_title": "Чаро Online Omuz-ро интихоб мекунанд?",
     "benefits": {
       "expert": {
-        "title": "Омӯзгорони коршинос",
-        "desc": "Аз мутахассисони ширкатҳои пешрафтаи технологӣ омӯзед.",
+        "title": "Устодони коршинос",
+        "desc": "Аз мутахассисони ширкатҳои пешрафтаи IT омӯзед.",
         "extra_key": "extra_value"
       },
       "certificate": {
         "title": "Сертификатҳои эътирофшуда",
-        "desc": "Барои тасдиқи малакаҳои худ сертификат гиред."
+        "desc": "Пас аз хатм сертификат гиред, то малакаи худро нишон диҳед."
       },
       "access": {
-        "title": "Дастрасии доимӣ",
-        "desc": "Як бор пардохт кунед ва дастрасии якумрӣ гиред."
+        "title": "Дастрасии якумра",
+        "desc": "Як маротиба пардохт кунед ва дастрасиро то абад захира кунед."
       },
       "community": {
-        "title": "Ҷамъияти омӯзишӣ",
-        "desc": "Ба ҳазорон донишҷӯён дар форуми фаъоли мо ҳамроҳ шавед."
+        "title": "Ҷомеаи омӯзандагон",
+        "desc": "Ба ҳазорон донишҷӯён дар форуми фаъоли мо пайваст шавед."
+      }
+    },
+    "how_it_works_title": "Раванди омӯзиши шумо",
+    "how_it_works": {
+      "step1_title": "Бақайдгирӣ",
+      "step1_desc": "Аз садҳо курсҳои устодони коршинос интихоб кунед ва дастрасии фаврӣ пайдо кунед.",
+      "step2_title": "Омӯзиш ва Таҷриба",
+      "step2_desc": "Видеоҳои босифатро тамошо кунед, вазифаҳоро иҷро кунед ва лоиҳаҳои воқеӣ созед.",
+      "step3_title": "Сертификатсия",
+      "step3_desc": "Барои гирифтани сертификати тасдиқшуда имтиҳонҳоро супоред ва малакаҳои нави худро нишон диҳед."
+    },
+    "testimonials_title": "Донишҷӯёни мо чӣ мегӯянд",
+    "testimonials_subtitle": "Ба ҳазорон омӯзандагоне, ки бо Omuz ба ҳадафҳои худ мерасанд, пайваст шавед.",
+    "testimonials": {
+      "1": {
+        "text": "Курси full-stack касби маро тамоман дигар кард. Аз донистани сифр ман дар муддати 6 моҳ ба барномасози хурд табдил ёфтам.",
+        "author": "Алишер Н.",
+        "role": "Муҳандиси Нармафзор"
+      },
+      "2": {
+        "text": "Курси тарроҳии UI/UX беҳтарин аст. Устодон чизҳои мураккабро хеле осон мефаҳмонанд.",
+        "author": "Зарина М.",
+        "role": "Дизайнери Маҳсулот"
+      },
+      "3": {
+        "text": "Ман форуми донишҷӯёнро дӯст доштам. Гирифтани маслиҳатҳо ҳам аз ҷониби ҳамсинфон ва ҳам устодон ба ман кӯмак кард, ки зуд рушд кунам.",
+        "author": "Рустам Д.",
+        "role": "Мутахассиси Маркетинг"
       }
     },
     "stats": {
       "courses": "Видеокурсҳо",
-      "instructors": "Менторҳои эксперт",
-      "students": "Донишҷӯёни хушбахт"
+      "instructors": "Устодони таҷрибадор",
+      "students": "Донишҷӯёни қаноатманд"
     },
     "cta_section": {
-      "title": "Роҳи омӯзишии худро оғоз кунед",
-      "subtitle": "Бо тарифи Pro ба зиёда аз 100 курс дастрасии бемаҳдуд пайдо кунед.",
-      "btn": "Pro-ро ҳамроҳ кунед"
+      "title": "Омӯзиши худро оғоз кунед",
+      "subtitle": "Бо Pro дастрасии бемаҳдуд ба зиёда аз 100+ курсҳо пайдо кунед.",
+      "btn": "Хариди Pro"
     },
     "link": "online.omuz.tj"
   },
@@ -193,19 +268,19 @@
     "badge": "Экосистемаи Omuz",
     "slides": [
       {
-        "title": "Innovative Solutions for Modern Business",
-        "subtitle": "We provide cutting-edge software development and digital transformation services.",
-        "cta": "Our Services"
+        "title": "Ҳалли инноватсионӣ барои тиҷорати муосир",
+        "subtitle": "Мо хизматрасониҳои пешрафта оид ба коркарди нармафзор ва трансформатсияи рақамиро пешниҳод менамоем.",
+        "cta": "Хизматрасониҳои мо"
       },
       {
-        "title": "Omuz CRM & Management",
-        "subtitle": "Comprehensive management systems for educational and corporate institutions.",
-        "cta": "View Products"
+        "title": "CRM ва Идоракунӣ",
+        "subtitle": "Системаҳои мукаммали идоракунӣ барои академияҳо ва муассисаҳои таълимӣ.",
+        "cta": "Дидани маҳсулот"
       },
       {
-        "title": "Online Omuz Platform",
-        "subtitle": "A premier platform for accessible and high-quality digital education.",
-        "cta": "Learn More"
+        "title": "Платформаи тарбиявии Online",
+        "subtitle": "Платформаи беҳтарин барои таҳсилоти рақамии дастрас ва босифат.",
+        "cta": "Маълумоти бештар"
       }
     ]
   },
@@ -227,72 +302,76 @@
     "support": "Дастгирии 24/7"
   },
   "advantages": {
-    "title": "Why Partner With Us",
+    "title": "Чаро бо мо ҳамкорӣ бояд кард",
     "method": {
-      "title": "Agile Methodology",
-      "desc": "We adapt to your needs with flexible and efficient development processes."
+      "title": "Методологияи инъикос (Agile)",
+      "desc": "Мо тавассути равандҳои рушди тағйирпазир ба эҳтиёҷоти шумо мутобиқ мешавем."
     },
     "mentors": {
-      "title": "Expert Team",
-      "desc": "Our team consists of industry veterans and certified professionals."
+      "title": "Гурӯҳи коршиносон",
+      "desc": "Гурӯҳи мо аз мутахассисони варзида ва соҳибтаҷриба иборат аст."
     },
     "fast": {
-      "title": "Rapid Delivery",
-      "desc": "We value your time and ensure timely delivery of all projects."
+      "title": "Расондани фаврӣ",
+      "desc": "Мо вақти шуморо қадр мекунем ва сари вақт супоридани лоиҳаҳоро кафолат медиҳем."
     }
   },
   "partners": {
-    "title": "Trusted by Industry Leaders"
+    "title": "Ба мо пешвоёни соҳа эътимод доранд"
   },
   "testimonials": {
     "title": "Шарҳҳои мизоҷон",
     "jamshed": "Ширкати Omuz қарорҳои нармафзори истисноиро пешниҳод кард, ки тамоми раванди кори моро ба тартиб оварданд. Шарики ҳақиқӣ дар навоварӣ.",
-    "jamshed_role": "CEO, TechForward",
-    "malika": "Модулҳои таълимии корпоративӣ аз Online Omuz қобилиятҳои техникии дастаи моро ба таври назаррас беҳтар карданд.",
-    "malika_role": "HR Director, Bank Eskhata",
-    "davron": "Хусусиятҳои автоматикунонии молиявии Omuz CRM ба стандартҳои баландтарини корпоративӣ ҷавобгӯ мебошанд. Тавсия медиҳам.",
-    "davron_role": "Finance Manager, Somon Air"
+    "jamshed_role": "Директори генералӣ, TechForward",
+    "malika": "Модулҳои таълимии корпоративӣ аз Online қобилиятҳои техникии дастаи моро ба таври назаррас беҳтар карданд.",
+    "malika_role": "Директори HR, Bank Eskhata",
+    "davron": "Хусусиятҳои автоматикунонии молиявии CRM ба стандартҳои баландтарини корпоративӣ ҷавобгӯ мебошанд. Тавсия медиҳам.",
+    "davron_role": "Менеҷери молиявӣ, Somon Air"
   },
   "courses_section": {
-    "title": "Key Areas of Expertise",
+    "title": "Самтҳои асосии тахассусӣ",
     "filters": {
-      "all": "All Sectors",
-      "frontend": "Development",
-      "backend": "Infrastructure",
-      "marketing": "Digital Marketing",
-      "tme": "Consulting"
+      "all": "Ҳамаи бахшҳо",
+      "frontend": "Барномасозӣ",
+      "backend": "Инфрасохтор",
+      "marketing": "Маркетинги рақамӣ",
+      "tme": "Консалтинг"
     },
     "card": {
-      "lessons": "modules",
-      "students": "active users",
-      "certificate": "Certification"
+      "lessons": "модулҳо",
+      "students": "истифодабарандагони фаъол",
+      "certificate": "Сертификатсия"
     },
     "items": {
-      "frontend_react": "Web Development",
-      "backend_python": "Cloud Solutions",
-      "smm": "Digital Strategy",
-      "graphic_design": "UI/UX Design",
-      "english": "Corporate Training",
-      "qa": "Quality Assurance"
+      "frontend_react": "Барномасозии Веб",
+      "backend_python": "Технологияҳои абрӣ",
+      "smm": "Стратегияи рақамӣ",
+      "graphic_design": "Дизайни UI/UX",
+      "english": "Омӯзиши корпоративӣ",
+      "qa": "Кафолати сифат"
     }
   },
   "hub": {
-    "title": "Our Ecosystem",
-    "subtitle": "Connecting technology, education, and business management.",
+    "title": "Экосистемаи мо",
+    "subtitle": "Технологияҳо, маориф ва идоракунии тиҷоратро муттаҳид месозем.",
     "online": {
-      "title": "Online Omuz",
-      "desc": "Digital platform for education and corporate training.",
-      "btn": "Explore"
+      "title": "Online",
+      "desc": "Платформаи рақамӣ барои омӯзиш ва тренингҳо.",
+      "btn": "Омӯхтан",
+      "hint": "Платформаро омӯхтан",
+      "headline": "Омӯзиши худро инкишоф диҳед"
     },
     "crm": {
-      "title": "Omuz CRM",
-      "desc": "Enterprise resource planning for educational centers.",
-      "btn": "Омӯхтан"
+      "title": "CRM",
+      "desc": "Платформаи идоракунӣ барои академияҳо ва назорати донишҷӯён.",
+      "btn": "Омӯхтан",
+      "hint": "Идоракуниро омӯхтан",
+      "headline": "Кори худро осон кунед"
     },
     "alt_omuz": "Omuz"
   },
   "product_online": {
-    "title": "Online Omuz",
+    "title": "Online",
     "desc": "Empowering continuous learning and professional development.",
     "features": [
       "Scalable learning infrastructure",
@@ -312,13 +391,13 @@
     ]
   },
   "product_crm": {
-    "title": "Omuz CRM",
-    "desc": "Streamline your educational business operations.",
+    "title": "CRM",
+    "desc": "Кори академия ва журналҳои донишҷӯёнро осон кунед.",
     "features": [
-      "Student & Staff Database",
-      "Financial Automation",
-      "Advanced Reporting",
-      "Schedule Optimization"
+      "Пойгоҳи донишҷӯён ва устодон",
+      "Назорати пешрафт ва давомот",
+      "Ҳисоботи академӣ",
+      "Оптимизатсияи ҷадвал"
     ],
     "cta": "Оғоз кардан",
     "back": "Бозгашт ба асосӣ",
@@ -352,7 +431,7 @@
     "success": "Дархост бомуваффақият ирсол шуд!"
   },
   "footer": {
-    "rights": "© 2026 Omuz Company. Ҳама ҳуқуқҳо ҳифз шудаанд.",
+    "rights": "Omuz Company. Ҳама ҳуқуқҳо ҳифз шудаанд.",
     "contact_us": "Бо мо тамос гиред",
     "home": "Асосӣ",
     "courses": "Хизматрасониҳо",
@@ -368,12 +447,16 @@
   },
   "consultation": {
     "title": "Машварати ройгон",
-    "subtitle": "Тамосҳои худро гузоред, мо ба шумо занг мезанем ва кӯшиш мекунем ба саволҳои шумо ҷавоб диҳем",
+    "subtitle": "Тамосҳои худро гузоред",
     "name_placeholder": "ном",
-    "phone_placeholder": "90 123 45 67",
+    "phone_placeholder": "+992 (XX) XXX-XXXX",
+    "email_placeholder": "Суроғаи почтаи электронӣ",
     "agreement": "Ман ба коркарди маълумоти шахсӣ розӣ мебошам.",
     "submit": "Ирсол кардан",
-    "success": "Дархост бомуваффақият фиристода шуд!"
+    "success": "Дархост бомуваффақият фиристода шуд!",
+    "sending": "Ирсол мешавад...",
+    "join_students_title": "10,000+ Донишҷӯён",
+    "join_students_subtitle": "Омӯзишро оғоз кунед."
   },
   "about_section": {
     "title": "About Omuz Company",
@@ -385,11 +468,11 @@
       "mentors": "Экспертҳо",
       "partners": "Шарикон"
     },
-    "badge": "Инноватсияҳои рақамӣ",
+    "badge": "Инноватсияҳои Рақамӣ",
     "desc_1_sub": "Мо ҷамъиятҳо месозем ва тавассути таълим ва технология рушд медиҳем.",
     "desc_2_sub": "Ҳамкорӣ бо пешвоёни соҳа барои пешниҳоди қарорҳои сатҳи ҷаҳонӣ.",
     "learn_more": "Муфассал",
-    "alt_team": "Ҳамкории даста",
+    "alt_team": "Ҳамкории дастаҷамъона",
     "stat_1_val": "5000+",
     "stat_2_val": "50+",
     "stat_3_val": "20+"
@@ -400,37 +483,37 @@
     "badge": "Афзалиятҳои асосӣ",
     "cards": {
       "mentors": {
-        "title": "Expert Engineers",
-        "desc": "Work with a team of senior developers and industry specialists."
+        "title": "Муҳандисони коршинос",
+        "desc": "Бо дастаи барномасозони калон ва коршиносони соҳа кор кунед."
       },
       "schedule": {
-        "title": "Scalable Solutions",
-        "desc": "Systems designed to grow with your business needs."
+        "title": "Қарорҳои миқёспазир",
+        "desc": "Системаҳое, ки барои рушд бо эҳтиёҷоти тиҷорати шумо тарҳрезӣ шудаанд."
       },
       "career": {
-        "title": "Strategic Growth",
-        "desc": "helping businesses achieve their digital transformation goals."
+        "title": "Рушди стратегӣ",
+        "desc": "Ба ширкатҳо дар расидан ба ҳадафҳои трансформатсияи рақамии онҳо кӯмак мекунем."
       },
       "community": {
-        "title": "Partner Network",
-        "desc": "Access to a wide network of industry partners and resources."
+        "title": "Шабакаи шарикон",
+        "desc": "Дастрасӣ ба шабакаи васеи шарикони соҳа ва захираҳо."
       }
     }
   },
   "auth": {
-    "login_title": "Welcome Back",
-    "login_subtitle": "Enter your credentials to access your account",
-    "email_label": "Email",
-    "password_label": "Password",
-    "login_btn": "Sign In",
-    "forgot_password": "Forgot password?",
-    "no_account": "Don't have an account?",
-    "register": "Sign up",
-    "name_label": "Full Name",
-    "confirm_password_label": "Confirm Password",
-    "register_btn": "Create Account",
-    "have_account": "Already have an account?",
-    "login": "Sign in",
+    "login_title": "Хуш омадед",
+    "login_subtitle": "Маълумоти худро барои дастрасӣ ба ҳисоб ворид кунед",
+    "email_label": "Почтаи электронӣ (Email)",
+    "password_label": "Рамз (Парол)",
+    "login_btn": "Ворид шудан",
+    "forgot_password": "Рамзро фаромӯш кардед?",
+    "no_account": "Ҳисоб надоред?",
+    "register": "Бақайдгирӣ",
+    "name_label": "Номи пурра",
+    "confirm_password_label": "Тасдиқи рамз",
+    "register_btn": "Ҳисоб сохтан",
+    "have_account": "Шумо аллакай ҳисоб доред?",
+    "login": "Ворид шудан",
     "or_continue_with": "Ё идома диҳед бо",
     "github": "Github",
     "google": "Google",
@@ -449,21 +532,21 @@
     "go_home": "Ба саҳифаи асосӣ"
   },
   "register_page": {
-    "join_us": "Join Us",
-    "create_account": "Create Account",
-    "start_journey": "Start your journey with Omuz.tj today",
-    "terms": "By registering, you agree to our Terms of Service and Privacy Policy"
+    "join_us": "Ба мо ҳамроҳ шавед",
+    "create_account": "Ҳисоб сохтан",
+    "start_journey": "Сафари худро бо Omuz.tj имрӯз оғоз кунед",
+    "terms": "Бо сабти ном шудан, шумо ба Шартҳои хизматрасонии мо розӣ мешавед"
   },
   "cta_section": {
-    "title": "Transform Your Business Today",
-    "subtitle": "Join leading companies that trust Omuz for their digital needs.",
-    "get_started": "Partner With Us",
-    "contact": "Contact Sales"
+    "title": "Тиҷорати худро имрӯз дигаргун созед",
+    "subtitle": "Ба ширкатҳои пешрафта, ки ба Omuz эътимод доранд, ҳамроҳ шавед.",
+    "get_started": "Фармоиш додан",
+    "contact": "Шӯъбаи фурӯш"
   },
   "login_page": {
-    "welcome_back": "Welcome Back",
-    "sign_in": "Sign In",
-    "enter_credentials": "Enter your credentials to access your account",
-    "security": "Protected by Omuz Security"
+    "welcome_back": "Хуш омадед",
+    "sign_in": "Ворид шудан",
+    "enter_credentials": "Маълумоти худро барои дастрасӣ ворид кунед",
+    "security": "Бо Omuz Security ҳифз карда шудааст"
   }
 }

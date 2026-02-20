@@ -92,7 +92,7 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>{t("rights")}</p>
+          <p>© {new Date().getFullYear()} {t("rights")}</p>
           <div className="flex gap-6">
              <Link href="#" className="hover:text-sky-600 dark:hover:text-white transition-colors">{t("privacy")}</Link>
              <Link href="#" className="hover:text-sky-600 dark:hover:text-white transition-colors">{t("terms")}</Link>

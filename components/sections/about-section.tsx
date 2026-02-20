@@ -118,15 +118,15 @@ export function AboutSection() {
                 >
                    <div className="grid grid-cols-3 gap-4 text-center divide-x divide-slate-200 dark:divide-slate-800">
                       <div>
-                         <div className="text-2xl font-bold text-sky-600 dark:text-sky-400">5000+</div>
+                         <div className="text-2xl font-bold text-sky-600 dark:text-sky-400">{t('stat_1_val')}</div>
                          <div className="text-[10px] uppercase font-bold text-slate-500 tracking-wider mt-1">{t('stats.students')}</div>
                       </div>
                       <div>
-                         <div className="text-2xl font-bold text-sky-600 dark:text-sky-400">50+</div>
+                         <div className="text-2xl font-bold text-sky-600 dark:text-sky-400">{t('stat_2_val')}</div>
                          <div className="text-[10px] uppercase font-bold text-slate-500 tracking-wider mt-1">{t('stats.mentors')}</div>
                       </div>
                       <div>
-                         <div className="text-2xl font-bold text-sky-600 dark:text-sky-400">20+</div>
+                         <div className="text-2xl font-bold text-sky-600 dark:text-sky-400">{t('stat_3_val')}</div>
                          <div className="text-[10px] uppercase font-bold text-slate-500 tracking-wider mt-1">{t('stats.partners')}</div>
                       </div>
                    </div>

@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl"
 import { MagicCard } from "@/components/ui/magic-card"
-import Image from "next/image"
 
 export function TestimonialsSection() {
   const t = useTranslations("testimonials")
@@ -12,19 +11,22 @@ export function TestimonialsSection() {
       name: "Jamshed Rahmonov",
       role: t('jamshed_role'),
       content: t('jamshed'),
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jamshed"
+      initials: "JR",
+      color: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
     },
     {
       name: "Malika Sharipova",
       role: t('malika_role'),
       content: t('malika'),
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Malika"
+      initials: "MS",
+      color: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
     },
     {
       name: "Davron Jumaev",
       role: t('davron_role'),
       content: t('davron'),
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Davron"
+      initials: "DJ",
+      color: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
     },
   ]
 
@@ -45,8 +47,8 @@ export function TestimonialsSection() {
                 "{testi.content}"
               </p>
               <div className="flex items-center gap-4">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden bg-accent">
-                  <Image src={testi.avatar} alt={testi.name} fill />
+                <div className={`relative flex items-center justify-center w-12 h-12 rounded-full overflow-hidden ${testi.color}`}>
+                  <span className="font-bold text-lg">{testi.initials}</span>
                 </div>
                 <div>
                   <h4 className="font-bold">{testi.name}</h4>

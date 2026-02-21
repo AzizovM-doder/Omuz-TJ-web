@@ -32,7 +32,7 @@ export function ConsultationSection() {
   return (
     <section className="p-5">
       {/* Background Decorative Elements */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sky-200/20 dark:bg-sky-900/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[800px] lg:h-[800px] bg-sky-200/20 dark:bg-sky-900/10 rounded-full blur-3xl -z-10" />
 
       <div className="container max-w-7xl mx-auto p-5">
         <div className="grid lg:grid-cols-2 gap-0 shadow-2xl rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800">

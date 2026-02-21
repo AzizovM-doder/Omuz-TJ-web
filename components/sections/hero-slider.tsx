@@ -49,10 +49,10 @@ export function HeroSlider() {
   const CurrentIcon = slideAccents[currentSlide].icon
 
   return (
-    <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden bg-slate-50 dark:bg-[#030305]">
+    <section className="relative overflow-hidden max-w-full w-full min-h-180 flex items-center justify-center overflow-hidden bg-slate-50 dark:bg-[#030305]">
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.02] dark:opacity-[0.05]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20 dark:opacity-30" />
         
         {/* Animated Orbs */}
         <AnimatePresence mode="popLayout">
@@ -62,7 +62,7 @@ export function HeroSlider() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.2 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className={`absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gradient-to-tr ${slideAccents[currentSlide].glow} rounded-full blur-[120px] mix-blend-screen -z-10`}
+            className={`absolute top-1/4 left-1/4 lg:w-[500px] lg:h-[500px] bg-gradient-to-tr ${slideAccents[currentSlide].glow} rounded-full blur-[120px] mix-blend-screen -z-10`}
           />
         </AnimatePresence>
         
@@ -112,9 +112,11 @@ export function HeroSlider() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                  <Button size="lg" className="h-14 px-8 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all hover:scale-105 bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 group">
-                    {t(`slides.${currentSlide}.cta`)}
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <Button asChild size="lg" className="h-14 px-8 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all hover:scale-105 bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 group">
+                    <a href="#products">
+                      {t(`slides.${currentSlide}.cta`)}
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </a>
                   </Button>
                 </div>
               </motion.div>

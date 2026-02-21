@@ -58,7 +58,7 @@ export function EcosystemBeam() {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-transparent relative w-full overflow-hidden min-h-[600px] flex flex-col items-center justify-center">
+    <section id="products" className="py-20 md:py-32 bg-transparent relative w-full overflow-hidden min-h-[600px] flex flex-col items-center justify-center">
       
       {/* Dynamic Background Effects */}
       <div className="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none opacity-40 dark:opacity-20 z-0 overflow-hidden">

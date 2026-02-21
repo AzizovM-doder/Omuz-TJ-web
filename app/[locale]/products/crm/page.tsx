@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { BarChart3, Calendar, CreditCard, ChevronRight, Users, Smartphone, Headphones, CheckCircle2, Building2, Activity, Globe, Zap, ArrowRight, ShieldCheck, Database, Send, Loader2 } from "lucide-react";
-import { Footer } from "@/components/footer";
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useRef, useState } from "react";
 import { toast } from "react-toastify";
@@ -674,8 +673,6 @@ export default function CrmProductPage({
                </div>
            </div>
        </section>
-       
-       <Footer />
     </div>
   );
 }

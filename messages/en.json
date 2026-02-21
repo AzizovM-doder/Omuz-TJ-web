@@ -9,7 +9,9 @@
     "contact": "Contact",
     "login": "Login",
     "view_details": "View details",
-    "theme": "Theme"
+    "theme": "Theme",
+    "menu": "Navigation Menu",
+    "menu_description": "Use the links below to navigate through the Omuz ecosystem."
   },
   "about_page": {
     "title": "We Are Omuz Company",
@@ -152,111 +154,112 @@
     "link": "omuz.tj/crm"
   },
   "products_online": {
-    "title": "Online",
-    "subtitle": "Digital Learning & Corporate Training Platform",
-    "description": "Unlock your potential with high-quality courses taught by industry experts. Learn coding, design, marketing, and more.",
-    "cta": "Start Learning",
-    "browse": "Browse Courses",
-    "courses_title": "Explore Top Categories",
-    "courses_subtitle": "Learn from experts",
-    "categories": {
-      "dev": "Development",
-      "design": "Design",
-      "marketing": "Marketing",
-      "business": "Business"
-    },
-    "view_all": "View All Categories",
-    "trending_title": "Trending Courses",
-    "ecosystem_title": "Interactive Learning Ecosystem",
-    "ecosystem_subtitle": "Master skills continuously.",
-    "ecosystem_core": "Core",
-    "ecosystem_nodes": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "design": "Design",
-      "marketing": "Marketing",
-      "business": "Business",
-      "analytics": "Analytics"
-    },
-    "join_title": "Join 10,000+ Students",
-    "join_subtitle": "Start digital journey.",
-    "course_suffix": "Courses",
-    "badge": "Omuz Learning Environment",
+    "title": "Omuz Online",
+    "subtitle": "The Ultimate Platform for Digital Education",
+    "description": "Start your journey today. Whether you want to share your expertise with the world or learn new skills to advance your career, Omuz Online is your home.",
+    "cta_student": "Find a Course",
+    "cta_creator": "Start Teaching",
+    "badge": "Omuz Learning Ecosystem",
     "platform_text": "Platform",
-    "certified": "Certified",
-    "upon_completion": "Upon completion",
-    "trending_courses": {
-      "1": {
-        "category": "Development",
-        "title": "Full Stack Web Development Bootcamp"
-      },
-      "2": {
-        "category": "Business",
-        "title": "Digital Marketing Strategy Masterclass"
-      },
-      "3": {
-        "category": "Design",
-        "title": "UI/UX Design Principals for Beginners"
-      }
-    },
-    "benefits_title": "Why Choose Online Omuz?",
-    "benefits": {
-      "expert": {
-        "title": "Expert Instructors",
-        "desc": "Learn from professionals working at top tech companies."
-      },
-      "certificate": {
-        "title": "Recognized Certificates",
-        "desc": "Earn certificates upon completion to showcase your skills."
-      },
-      "access": {
-        "title": "Lifetime Access",
-        "desc": "Pay once and keep the course content forever."
-      },
-      "community": {
-        "title": "Learning Community",
-        "desc": "Join thousands of learners in our active community forum."
-      }
-    },
-    "how_it_works_title": "Your Learning Journey",
-    "how_it_works": {
-      "step1_title": "Enroll",
-      "step1_desc": "Select from hundreds of expert-led courses and get instant access to the material.",
-      "step2_title": "Learn & Practice",
-      "step2_desc": "Watch high-quality videos, complete interactive assignments, and build real projects.",
-      "step3_title": "Get Certified",
-      "step3_desc": "Pass the final exams to earn a verified certificate and showcase your new skills."
-    },
-    "testimonials_title": "What Our Students Say",
-    "testimonials_subtitle": "Join thousands of learners achieving their goals with Omuz.",
-    "testimonials": {
-      "1": {
-        "text": "The full-stack course completely transformed my career. I went from knowing zero code to landing a junior developer role in 6 months.",
-        "author": "Alisher N.",
-        "role": "Software Engineer"
-      },
-      "2": {
-        "text": "The UI/UX design masterclass is top-notch. The instructors explain complex concepts in a very understandable way.",
-        "author": "Zarina M.",
-        "role": "Product Designer"
-      },
-      "3": {
-        "text": "I loved the community aspect. Getting feedback from both peers and instructors helped me improve incredibly fast.",
-        "author": "Rustam D.",
-        "role": "Marketing Specialist"
-      }
-    },
     "stats": {
-      "courses": "Video Courses",
-      "instructors": "Expert Mentors",
-      "students": "Happy Students"
+      "students": "10K+ Students",
+      "courses": "500+ Courses",
+      "instructors": "100+ Mentors"
     },
-    "cta_section": {
-      "title": "Start Your Learning Journey",
-      "subtitle": "Get unlimited access to over 100+ courses with our pro plan.",
-      "btn": "Join Pro"
+    "creators": {
+      "tag": "For Creators",
+      "title": "Build Your Digital Academy",
+      "subtitle": "Everything you need to create, market, and sell your courses online.",
+      "features": {
+        "builder": {
+          "title": "Intuitive Course Builder",
+          "desc": "Drag and drop your way to a beautiful, interactive curriculum."
+        },
+        "analytics": {
+          "title": "Deep Analytics",
+          "desc": "Track student progress, revenue, and engagement in real-time."
+        },
+        "community": {
+          "title": "Engage Your Audience",
+          "desc": "Host discussions, quizzes, and live sessions directly on the platform."
+        }
+      }
     },
-    "link": "online.omuz.tj"
+    "students": {
+      "tag": "For Students",
+      "title": "Master In-Demand Skills",
+      "subtitle": "Learn from industry experts with interactive lessons and real-world projects.",
+      "features": {
+        "video": {
+          "title": "HD Video Hosting",
+          "desc": "Buffer-free streaming across all your devices, anytime, anywhere."
+        },
+        "cert": {
+          "title": "Verified Certificates",
+          "desc": "Showcase your achievements with verifiable digital certificates upon completion."
+        },
+        "mentor": {
+          "title": "1-on-1 Mentorship",
+          "desc": "Connect directly with instructors for personalized guidance and feedback."
+        }
+      }
+    },
+    "timeline": {
+      "title": "How to get started",
+      "steps": {
+        "1": {
+          "title": "Create your account",
+          "desc": "Sign up in seconds and join our growing community."
+        },
+        "2": {
+          "title": "Pick your path",
+          "desc": "Choose to enroll in a course or start building your own academy."
+        },
+        "3": {
+          "title": "Achieve your goals",
+          "desc": "Learn new skills or start earning revenue from your knowledge."
+        }
+      }
+    },
+    "advanced_features": {
+      "title": "Built for Scale",
+      "subtitle": "Advanced tools for serious growth.",
+      "items": {
+        "live": {
+          "title": "Live Interactive Classes",
+          "desc": "Host workshops and webinars with real-time chat and screen sharing."
+        },
+        "grading": {
+          "title": "Automated Grading",
+          "desc": "Save hours with auto-scored quizzes and standardized assignments."
+        },
+        "mobile": {
+          "title": "Mobile-First Design",
+          "desc": "Students can learn seamlessly on any device with offline access."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Success Stories",
+      "subtitle": "Join thousands of creators who have launched successful academies.",
+      "items": {
+        "1": {
+          "name": "Sarah J.",
+          "role": "Tech Instructor",
+          "quote": "Omuz Online gave me the tools to scale my coding bootcamp to over 5,000 active students."
+        },
+        "2": {
+          "name": "David M.",
+          "role": "Language Tutor",
+          "quote": "The built-in payment processing and video hosting made launching my language courses incredibly easy."
+        }
+      }
+    },
+    "ecosystem": {
+      "title": "The Full Ecosystem",
+      "subtitle": "Seamlessly intergrated with Omuz CRM.",
+      "desc": "Manage your entire educational business from marketing to student success with our integrated suite."
+    }
   },
   "hero": {
     "title": "Omuz.tj - Digital Transformation Ecosystem",
@@ -352,11 +355,11 @@
     "title": "Our Ecosystem",
     "subtitle": "Connecting technology, education, and business management.",
     "online": {
-      "title": "Omuz",
-      "desc": "Digital platform for education and corporate training.",
+      "title": "Omuz Online",
+      "desc": "The platform for creators to start their own courses, and for students to find courses.",
       "btn": "Explore",
       "hint": "Explore Platform",
-      "headline": "Empower Your Learning"
+      "headline": "Start Teaching or Learning"
     },
     "crm": {
       "title": "CRM",
@@ -368,24 +371,26 @@
     "alt_omuz": "Omuz"
   },
   "product_online": {
-    "title": "Omuz",
-    "desc": "Empowering continuous learning and professional development.",
+    "title": "Omuz Online",
+    "desc": "Publish your own courses or discover new ones. Build an audience or learn new skills. Your ultimate platform for digital education.",
     "features": [
-      "Scalable learning infrastructure",
-      "Corporate training modules",
-      "Progress tracking & analytics",
-      "Accessible anywhere, anytime"
+      "Create and sell courses easily",
+      "Interactive learning environment",
+      "Find the perfect mentor",
+      "Grow your audience"
     ],
     "cta": "Visit Platform",
     "back": "Back to Home",
     "features_list": [
-      "Video conferences",
-      "Interactive lessons",
-      "Upload materials",
-      "Grading system",
-      "Lesson recordings",
-      "Format support"
-    ]
+      "Course creation tools",
+      "Student analytics",
+      "Payments & Enrollments",
+      "Interactive Lessons",
+      "Video hosting",
+      "Community forums"
+    ],
+    "badge": "Omuz Online Ecosystem",
+    "platform_text": "Digital Education Platform"
   },
   "product_crm": {
     "title": "CRM",
@@ -417,7 +422,10 @@
     "email_placeholder": "Email Address",
     "submit": "Send",
     "sending": "Sending...",
-    "success": "Request sent successfully!"
+    "success": "Request sent successfully!",
+    "join_students_title": "Join 10,000+ Students",
+    "join_students_subtitle": "Start your digital journey.",
+    "agreement": "I agree to the processing of personal data."
   },
   "footer": {
     "rights": "Omuz Company. All rights reserved.",

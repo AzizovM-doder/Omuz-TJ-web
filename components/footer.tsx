@@ -9,7 +9,7 @@ export function Footer() {
   const t = useTranslations("footer")
   
   return (
-    <footer className="bg-sky-50/50 dark:bg-slate-950 text-foreground border-t border-border pt-16 pb-8 transition-colors duration-300">
+    <footer className="bg-sky-50/50 dark:bg-slate-950 text-foreground border-t border-border pt-16 pb-8 transition-colors duration-300 mt-25">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -17,17 +17,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 group">
                {/* Adaptive Logo */}
                {/* Light Mode Logo */}
-               <div className="dark:hidden">
-                 <Image 
-                   src="/omuz2.svg" 
-                   alt="Omuz.tj" 
-                   width={120} 
-                   height={40} 
-                   className="h-10 w-auto"
-                 />
-               </div>
-               {/* Dark Mode Logo */}
-               <div className="hidden dark:block">
+               <div >
                  <Image 
                    src="/omuz.svg" 
                    alt="Omuz.tj" 

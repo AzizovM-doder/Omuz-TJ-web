@@ -4,8 +4,12 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { PlayCircle, Award, Clock, ChevronRight, Globe, Users, Briefcase, Layout, Send, Loader2 } from "lucide-react";
-import { Footer } from "@/components/footer";
+import { 
+  PlayCircle, Award, BookOpen, PenTool, 
+  BarChart3, Users, Video, BadgeCheck, 
+  MessageCircle, ArrowRight, CheckCircle2,
+  ChevronRight, Compass, Loader2
+} from "lucide-react";
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useRef, useState } from "react";
 import { toast } from "react-toastify";
@@ -29,7 +33,6 @@ export default function OnlineProductPage({
   const t = useTranslations("products_online");
   const formT = useTranslations("request_form");
   const heroRef = useRef<HTMLDivElement>(null);
-  
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleFormSubmit = (e: React.FormEvent) => {
@@ -49,532 +52,405 @@ export default function OnlineProductPage({
   const scaleBg = useTransform(heroScroll, [0, 1], [1, 1.1]);
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans selection:bg-sky-500/30">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans selection:bg-sky-500/30 overflow-x-hidden transition-colors duration-300">
        
-       {/* Cinematic Hero Section */}
-       <section ref={heroRef} className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
-          {/* Animated Background Image with Overlay */}
-          <motion.div style={{ opacity: opacityBg, scale: scaleBg, y: useTransform(heroScroll, [0, 1], ["0%", "20%"]) }} className="absolute inset-0 z-0">
-             <Image 
-               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop"
-               alt="Collaboration"
-               fill
-               className="object-cover brightness-[0.85] dark:brightness-[0.3]"
-               priority
-             />
-             <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-transparent dark:from-slate-950 dark:via-slate-950/90 dark:to-transparent pointer-events-none" />
-             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50 dark:to-slate-950 pointer-events-none" />
-          </motion.div>
-          
-          {/* Glowing Ambient Lights */}
+       {/* High-End Hero Section */}
+       <section ref={heroRef} className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 min-h-screen flex items-center justify-center">
+          {/* Deep abstract background grid */}
+          <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-50/50 via-slate-50 to-slate-100 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950">
+             <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f10_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f10_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+          </div>
+
+          {/* Majestic Glows */}
           <motion.div 
-             animate={{ opacity: [0.3, 0.6, 0.3], scale: [1, 1.2, 1] }}
-             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-             className="absolute top-1/4 right-1/4 w-[40vw] h-[40vw] bg-sky-500/30 rounded-full blur-[120px] pointer-events-none mix-blend-screen" 
+             animate={{ opacity: [0.15, 0.3, 0.15], scale: [1, 1.1, 1] }}
+             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+             className="absolute top-0 right-1/4 w-[50vw] h-[50vw] bg-sky-500/20 rounded-full blur-[150px] pointer-events-none mix-blend-screen" 
           />
           <motion.div 
-             animate={{ opacity: [0.2, 0.5, 0.2], scale: [1, 1.3, 1] }}
-             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-             className="absolute bottom-1/4 left-1/4 w-[30vw] h-[30vw] bg-purple-500/30 rounded-full blur-[120px] pointer-events-none mix-blend-screen" 
+             animate={{ opacity: [0.1, 0.25, 0.1], scale: [1, 1.2, 1] }}
+             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+             className="absolute bottom-0 left-1/4 w-[40vw] h-[40vw] bg-purple-500/20 rounded-full blur-[150px] pointer-events-none mix-blend-screen" 
           />
 
-          <div className="container max-w-7xl mx-auto px-4 relative z-10 w-full">
-             <motion.div 
-                variants={STAGGER}
-                initial="hidden"
-                animate="show"
-                className="max-w-3xl"
-             >
-                <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full bg-white/10 text-sky-300 border border-sky-400/30 mb-6 lg:mb-8 backdrop-blur-md shadow-[0_0_15px_rgba(14,165,233,0.3)]">
-                   <span className="relative flex h-2 w-2 lg:h-2.5 lg:w-2.5">
+          <div className="container max-w-7xl mx-auto px-4 relative z-10 flex flex-col items-center text-center">
+             <motion.div variants={STAGGER} initial="hidden" animate="show" className="max-w-4xl flex flex-col items-center">
+                
+                <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 dark:bg-slate-900/50 border border-slate-200/50 dark:border-slate-700/50 backdrop-blur-md mb-8 shadow-inner dark:shadow-sky-500/10">
+                   <div className="relative flex h-2.5 w-2.5">
                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                     <span className="relative inline-flex rounded-full h-2 w-2 lg:h-2.5 lg:w-2.5 bg-sky-500"></span>
-                   </span>
-                   <span className="text-xs sm:text-sm font-medium">{t('badge')}</span>
+                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sky-500"></span>
+                   </div>
+                   <span className="text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-300">{t('badge')}</span>
                 </motion.div>
                 
-                <motion.h1 variants={FADE_UP} className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 lg:mb-8 leading-[1.15] lg:leading-[1.1] text-white tracking-tight">
-                   {t('title')} <br className="hidden sm:block"/>
-                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-400 block pb-1">{t('platform_text')}</span>
+                <motion.h1 variants={FADE_UP} className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+                   {t('title')}.<br />
+                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-blue-600 to-purple-600 dark:from-sky-400 dark:via-blue-500 dark:to-purple-500 py-2 block">
+                     {t('subtitle')}
+                   </span>
                 </motion.h1>
                 
-                <motion.p variants={FADE_UP} className="text-lg sm:text-xl lg:text-2xl text-slate-300 mb-8 lg:mb-10 leading-relaxed max-w-2xl font-light">
+                <motion.p variants={FADE_UP} className="text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-10 max-w-3xl font-light leading-relaxed">
                    {t('description')}
                 </motion.p>
                 
-                <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                   <Button size="lg" className="h-12 sm:h-14 w-full sm:w-auto px-8 text-base sm:text-lg rounded-full bg-sky-600 hover:bg-sky-500 text-white shadow-[0_0_40px_-10px_rgba(14,165,233,0.6)] border border-sky-400/50 transition-all hover:scale-105">
-                       {t('cta')} <ChevronRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
+                   <Button size="lg" className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-2xl bg-sky-600 hover:bg-sky-500 text-white shadow-[0_0_40px_-10px_rgba(14,165,233,0.3)] dark:shadow-[0_0_40px_-10px_rgba(14,165,233,0.5)] border border-sky-400/30 transition-all hover:scale-105 group w-full sm:w-auto">
+                       {t('cta_student')} <Compass className="ml-2 w-5 h-5 group-hover:rotate-45 transition-transform" />
                    </Button>
-                   <Button size="lg" variant="outline" className="h-12 sm:h-14 w-full sm:w-auto px-8 text-base sm:text-lg rounded-full border-white/20 text-white hover:bg-white/10 backdrop-blur-md transition-all hover:scale-105">
-                       {t('browse')}
+                   <Button size="lg" variant="outline" className="h-14 sm:h-16 px-8 sm:px-10 text-base sm:text-lg rounded-2xl border-slate-300 dark:border-slate-700 bg-white/50 dark:bg-slate-900/50 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:scale-105 backdrop-blur-md group w-full sm:w-auto">
+                       {t('cta_creator')} <PenTool className="ml-2 w-5 h-5 group-hover:text-purple-500 dark:group-hover:text-purple-400 transition-colors" />
                    </Button>
                 </motion.div>
 
-                <motion.div variants={FADE_UP} className="mt-8 lg:mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:gap-8 text-slate-300 text-sm font-medium">
-                    <div className="flex items-center gap-2 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
-                       <Users className="w-5 h-5 text-sky-400" />
-                       <span>{t('stats.students')}</span>
-                    </div>
-                    <div className="flex items-center gap-2 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
-                       <PlayCircle className="w-5 h-5 text-purple-400" />
-                       <span>{t('stats.courses')}</span>
-                    </div>
+                {/* Trust Stats Row */}
+                <motion.div variants={FADE_UP} className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800/50 flex flex-wrap justify-center gap-8 sm:gap-16 text-slate-700 dark:text-slate-300">
+                   <div className="flex flex-col items-center">
+                      <span className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">10K+</span>
+                      <span className="text-sm uppercase tracking-wider text-slate-500 font-semibold">{t('stats.students')}</span>
+                   </div>
+                   <div className="flex flex-col items-center">
+                      <span className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">500+</span>
+                      <span className="text-sm uppercase tracking-wider text-slate-500 font-semibold">{t('stats.courses')}</span>
+                   </div>
+                   <div className="flex flex-col items-center">
+                      <span className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">100+</span>
+                      <span className="text-sm uppercase tracking-wider text-slate-500 font-semibold">{t('stats.instructors')}</span>
+                   </div>
                 </motion.div>
              </motion.div>
           </div>
        </section>
 
-       {/* Floating Categories */}
-       <section className="py-20 lg:py-24 bg-slate-50 dark:bg-slate-950 relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900/50 pointer-events-none" />
-          <div className="container max-w-7xl mx-auto px-4 relative z-10">
-             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-4 sm:gap-6">
-                <motion.div 
-                   initial={{ opacity: 0, x: -20 }}
-                   whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: true }}
-                >
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 text-slate-900 dark:text-white tracking-tight">{t('courses_title')}</h2>
-                    <p className="text-base sm:text-lg lg:text-xl text-slate-600 dark:text-slate-400 font-light max-w-xl">{t('courses_subtitle')}</p>
-                </motion.div>
-                <motion.div
-                   initial={{ opacity: 0, x: 20 }}
-                   whileInView={{ opacity: 1, x: 0 }}
-                   viewport={{ once: true }}
-                   className="w-full md:w-auto"
-                >
-                    <Button variant="ghost" className="w-full md:w-auto text-sky-600 hover:text-sky-700 hover:bg-sky-50 dark:hover:bg-sky-900/20 group h-12 px-6 rounded-full text-base">
-                        {t('view_all')} <ChevronRight className="ml-1 w-4 sm:w-5 h-4 sm:h-5 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                </motion.div>
+       {/* FOR CREATORS SECTION (Bento Box) */}
+       <section className="py-24 relative z-10">
+          <div className="container max-w-7xl mx-auto px-4">
+             <div className="text-center mb-16">
+                <span className="text-purple-600 dark:text-purple-400 font-bold tracking-widest uppercase text-sm mb-4 block">{t('creators.tag')}</span>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white">{t('creators.title')}</h2>
+                <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t('creators.subtitle')}</p>
              </div>
 
+             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {/* Large Bento Item */}
+                <motion.div 
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   viewport={{ once: true }}
+                   whileHover={{ scale: 1.02 }}
+                   className="lg:col-span-2 relative p-8 md:p-12 rounded-3xl bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-950 border border-slate-200 dark:border-slate-800 shadow-xl overflow-hidden group"
+                >
+                   <div className="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                   <PenTool className="w-12 h-12 text-purple-600 dark:text-purple-400 mb-6" />
+                   <h3 className="text-3xl font-bold mb-4 text-slate-900 dark:text-white">{t('creators.features.builder.title')}</h3>
+                   <p className="text-slate-600 dark:text-slate-400 text-lg max-w-md">{t('creators.features.builder.desc')}</p>
+                   {/* Abstract builder graphic */}
+                   <div className="absolute right-0 bottom-0 md:-right-10 md:-bottom-10 w-64 h-48 bg-slate-50/80 dark:bg-slate-800/50 rounded-tl-3xl border-l border-t border-slate-200 dark:border-slate-700 backdrop-blur-md translate-y-12 translate-x-12 group-hover:translate-y-4 transition-transform duration-500 shadow-2xl flex flex-col p-4 gap-3">
+                      <div className="h-6 w-3/4 bg-slate-200 dark:bg-slate-700 rounded-md" />
+                      <div className="h-16 w-full bg-slate-200/50 dark:bg-slate-700/50 rounded-md" />
+                      <div className="h-6 w-1/2 bg-sky-200/50 dark:bg-sky-500/20 rounded-md" />
+                   </div>
+                </motion.div>
+
+                <div className="flex flex-col gap-6">
+                   <motion.div 
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      whileHover={{ scale: 1.02 }}
+                      className="flex-1 p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl group relative overflow-hidden"
+                   >
+                      <div className="absolute inset-0 bg-sky-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <BarChart3 className="w-10 h-10 text-sky-600 dark:text-sky-400 mb-6" />
+                      <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">{t('creators.features.analytics.title')}</h3>
+                      <p className="text-slate-600 dark:text-slate-400">{t('creators.features.analytics.desc')}</p>
+                   </motion.div>
+                   <motion.div 
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      whileHover={{ scale: 1.02 }}
+                      className="flex-1 p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl group relative overflow-hidden"
+                   >
+                      <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <Users className="w-10 h-10 text-emerald-600 dark:text-emerald-400 mb-6" />
+                      <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">{t('creators.features.community.title')}</h3>
+                      <p className="text-slate-600 dark:text-slate-400">{t('creators.features.community.desc')}</p>
+                   </motion.div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+       {/* FOR STUDENTS SECTION (Interactive Layout) */}
+       <section className="py-24 relative z-10 bg-slate-100/50 dark:bg-slate-950/50 border-y border-slate-200/50 dark:border-white/5">
+          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.02] bg-center bg-repeat" />
+          <div className="container max-w-7xl mx-auto px-4 relative">
+             <div className="text-center mb-16">
+                <span className="text-sky-600 dark:text-sky-400 font-bold tracking-widest uppercase text-sm mb-4 block">{t('students.tag')}</span>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white">{t('students.title')}</h2>
+                <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t('students.subtitle')}</p>
+             </div>
+
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                {[
+                  { key: 'video', icon: Video, color: 'text-sky-600 dark:text-sky-400', bg: 'bg-sky-500/10' },
+                  { key: 'cert', icon: BadgeCheck, color: 'text-purple-600 dark:text-purple-400', bg: 'bg-purple-500/10' },
+                  { key: 'mentor', icon: MessageCircle, color: 'text-pink-600 dark:text-pink-400', bg: 'bg-pink-500/10' }
+                ].map((item, i) => (
+                   <motion.div 
+                      key={item.key}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.1 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      className="relative p-8 rounded-3xl bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors group shadow-sm hover:shadow-md"
+                   >
+                      <div className={cn("w-14 h-14 rounded-full flex items-center justify-center mb-6 ring-1 ring-slate-200 dark:ring-white/10", item.bg)}>
+                         <item.icon className={cn("w-7 h-7", item.color)} />
+                      </div>
+                      <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">{t(`students.features.${item.key}.title`)}</h3>
+                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{t(`students.features.${item.key}.desc`)}</p>
+                      <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-transparent via-slate-300 dark:via-slate-700 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                   </motion.div>
+                ))}
+             </div>
+          </div>
+       </section>
+
+       {/* TIMELINE SECTION */}
+       <section className="py-32 relative">
+          <div className="container max-w-3xl mx-auto px-4">
+             <div className="text-center mb-20">
+                <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">{t('timeline.title')}</h2>
+             </div>
+             
+             <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 dark:before:via-slate-700 before:to-transparent">
+                {[1, 2, 3].map((step, i) => (
+                   <motion.div 
+                      key={step}
+                      initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                   >
+                      <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-slate-50 dark:border-slate-950 bg-white dark:bg-slate-800 text-sky-600 dark:text-sky-400 font-bold shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm dark:shadow-[0_0_0_4px_rgba(15,23,42,1)] z-10">
+                         {step}
+                      </div>
+                      <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 group-hover:border-sky-500/30 dark:group-hover:border-sky-500/50 group-hover:-translate-y-1 transition-all shadow-lg">
+                         <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">{t(`timeline.steps.${step}.title`)}</h3>
+                         <p className="text-slate-600 dark:text-slate-400">{t(`timeline.steps.${step}.desc`)}</p>
+                      </div>
+                   </motion.div>
+                ))}
+             </div>
+          </div>
+       </section>
+
+       {/* INTERACTIVE FEATURES SHOWCASE */}
+       <section className="py-24 relative z-10 bg-slate-50 dark:bg-slate-950">
+          <div className="container max-w-7xl mx-auto px-4">
+             <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white">{t('advanced_features.title')}</h2>
+                <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t('advanced_features.subtitle')}</p>
+             </div>
+
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                  { key: 'live', icon: Video, color: 'text-indigo-600 dark:text-indigo-400', bg: 'bg-indigo-100 dark:bg-indigo-900/30' },
+                  { key: 'grading', icon: CheckCircle2, color: 'text-emerald-600 dark:text-emerald-400', bg: 'bg-emerald-100 dark:bg-emerald-900/30' },
+                  { key: 'mobile', icon: Compass, color: 'text-amber-600 dark:text-amber-400', bg: 'bg-amber-100 dark:bg-amber-900/30' }
+                ].map((item, i) => (
+                   <motion.div 
+                      key={item.key}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.1 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      className="p-8 rounded-[2rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl hover:-translate-y-2 transition-transform duration-300 group"
+                   >
+                      <div className={cn("w-16 h-16 rounded-2xl flex items-center justify-center mb-6", item.bg)}>
+                         <item.icon className={cn("w-8 h-8", item.color)} />
+                      </div>
+                      <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">{t(`advanced_features.items.${item.key}.title`)}</h3>
+                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{t(`advanced_features.items.${item.key}.desc`)}</p>
+                   </motion.div>
+                ))}
+             </div>
+          </div>
+       </section>
+
+       {/* SUCCESS STORIES / TESTIMONIALS */}
+       <section className="py-32 relative overflow-hidden bg-slate-900 text-white">
+          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5 mix-blend-overlay" />
+          <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+          
+          <div className="container max-w-7xl mx-auto px-4 relative z-10">
+             <div className="text-center mb-20 max-w-3xl mx-auto">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">{t('testimonials.title')}</h2>
+                <p className="text-xl text-slate-300 font-light">{t('testimonials.subtitle')}</p>
+             </div>
+
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {[1, 2].map((item, i) => (
+                   <motion.div 
+                      key={item}
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: i * 0.2 }}
+                      viewport={{ once: true }}
+                      className="p-8 md:p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md relative"
+                   >
+                      <MessageCircle className="absolute top-8 right-8 w-12 h-12 text-white/10" />
+                      <p className="text-xl md:text-2xl font-medium text-slate-200 mb-8 leading-relaxed">
+                         "{t(`testimonials.items.${item}.quote`)}"
+                      </p>
+                      <div className="flex items-center gap-4">
+                         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-sky-400 to-purple-500 flex items-center justify-center font-bold text-lg">
+                            {t(`testimonials.items.${item}.name`).charAt(0)}
+                         </div>
+                         <div>
+                            <div className="font-bold text-white text-lg">{t(`testimonials.items.${item}.name`)}</div>
+                            <div className="text-sky-400 text-sm">{t(`testimonials.items.${item}.role`)}</div>
+                         </div>
+                      </div>
+                   </motion.div>
+                ))}
+             </div>
+          </div>
+       </section>
+
+       {/* THE FULL ECOSYSTEM */}
+       <section className="py-24 relative z-10 bg-slate-50 dark:bg-slate-950 border-y border-slate-200 dark:border-slate-800">
+          <div className="container max-w-5xl mx-auto px-4 py-10 relative">
              <motion.div 
-                variants={STAGGER}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, margin: "-100px" }}
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="flex flex-col md:flex-row items-center gap-12 p-10 md:p-16 rounded-[3rem] bg-gradient-to-br from-indigo-50 to-sky-50 dark:from-indigo-950/40 dark:to-sky-950/40 border border-indigo-100 dark:border-indigo-900/50 shadow-2xl relative overflow-hidden"
              >
-                 {[
-                    { key: 'dev', icon: Layout, color: 'text-sky-500 bg-sky-50 shadow-sky-500/10 ring-sky-200' },
-                    { key: 'design', icon: Globe, color: 'text-pink-500 bg-pink-50 shadow-pink-500/10 ring-pink-200' },
-                    { key: 'marketing', icon: Users, color: 'text-orange-500 bg-orange-50 shadow-orange-500/10 ring-orange-200' },
-                    { key: 'business', icon: Briefcase, color: 'text-emerald-500 bg-emerald-50 shadow-emerald-500/10 ring-emerald-200' }
-                 ].map((cat, i) => (
-                    <motion.div 
-                       key={i} 
-                       variants={FADE_UP} 
-                       whileHover={{ y: -10, scale: 1.02 }}
-                       className="group relative p-6 lg:p-8 rounded-2xl lg:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur hover:bg-white dark:hover:bg-slate-800 hover:shadow-2xl hover:shadow-slate-200/50 dark:hover:shadow-sky-900/20 transition-all duration-300 cursor-pointer overflow-hidden"
-                    >
-                        {/* Hover Gradient Aura */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-sky-500/0 via-transparent to-purple-500/0 group-hover:from-sky-500/10 group-hover:to-purple-500/10 transition-colors duration-500" />
-                        
-                        {/* Continuous Float Animation */}
-                        <motion.div 
-                           animate={{ y: [0, -6, 0] }}
-                           transition={{ duration: 4 + (i % 2), repeat: Infinity, ease: "easeInOut", delay: i * 0.2 }}
-                           className="relative z-10"
-                        >
-                            <div className={cn("w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-inner ring-1 dark:bg-slate-800 dark:ring-slate-700", cat.color)}>
-                                <cat.icon className="w-6 h-6 sm:w-7 sm:h-7" />
+                <div className="absolute right-0 bottom-0 w-96 h-96 bg-purple-400/20 dark:bg-purple-500/10 blur-[100px] rounded-full" />
+                
+                <div className="md:w-1/2 relative z-10">
+                   <div className="w-16 h-16 rounded-2xl bg-white dark:bg-slate-800 shadow-xl flex items-center justify-center mb-8 border border-slate-100 dark:border-slate-700">
+                      <Image src="/omuz.svg" alt="Omuz" width={40} height={40} className="dark:invert" />
+                   </div>
+                   <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-white">{t('ecosystem.title')}</h2>
+                   <p className="text-xl text-indigo-600 dark:text-indigo-300 font-medium mb-4">{t('ecosystem.subtitle')}</p>
+                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-8">
+                     {t('ecosystem.desc')}
+                   </p>
+                   <Button variant="outline" className="rounded-xl h-12 px-6 border-indigo-200 dark:border-indigo-800 bg-white/50 dark:bg-slate-900/50 hover:bg-white dark:hover:bg-slate-800 text-indigo-700 dark:text-indigo-300">
+                     Discover Omuz CRM <ChevronRight className="ml-2 w-4 h-4" />
+                   </Button>
+                </div>
+                
+                <div className="md:w-1/2 relative z-10 w-full aspect-square md:aspect-auto">
+                   {/* Abstract Ecosystem Graphic */}
+                   <div className="relative w-full h-full min-h-[300px] flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-indigo-500/20 via-transparent to-transparent blur-2xl" />
+                      <div className="relative w-48 h-48 rounded-full border-2 border-dashed border-indigo-300 dark:border-indigo-700/50 animate-spin-slow flex items-center justify-center">
+                         <div className="w-32 h-32 rounded-full border border-sky-300 dark:border-sky-700/50 animate-reverse-spin flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-full bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700 flex items-center justify-center z-20">
+                               <BookOpen className="w-8 h-8 text-sky-500" />
                             </div>
-                            <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-1 sm:mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-sky-500 group-hover:to-purple-500 transition-colors uppercase tracking-tight">{t(`categories.${cat.key}`)}</h3>
-                            <p className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">20+ {t('course_suffix')}</p>
-                        </motion.div>
-                    </motion.div>
-                 ))}
+                         </div>
+                         {/* Orbiting nodes */}
+                         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-purple-500 rounded-full shadow-lg shadow-purple-500/50" />
+                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-6 h-6 bg-emerald-400 rounded-full shadow-lg shadow-emerald-400/50" />
+                         <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-sky-400 rounded-full shadow-lg shadow-sky-400/50 flex items-center justify-center text-white"><Users className="w-5 h-5"/></div>
+                      </div>
+                   </div>
+                </div>
              </motion.div>
           </div>
        </section>
 
-       {/* Trending Spotlights */}
-       <section className="py-32 bg-slate-50 dark:bg-slate-900 relative">
-           <div className="absolute top-0 right-0 w-1/3 h-full bg-[url('/grid.svg')] opacity-[0.03] dark:opacity-[0.02] pointer-events-none" />
-           <div className="container max-w-7xl mx-auto px-4 relative z-10">
-              <motion.h2 
-                 initial={{ opacity: 0, scale: 0.9 }}
-                 whileInView={{ opacity: 1, scale: 1 }}
-                 viewport={{ once: true }}
-                 className="text-4xl lg:text-5xl font-bold mb-16 text-slate-900 dark:text-white tracking-tight"
-              >
-                 {t('trending_title')}
-              </motion.h2>
-              <motion.div 
-                 variants={STAGGER}
-                 initial="hidden"
-                 whileInView="show"
-                 viewport={{ once: true, margin: "-100px" }}
-                 className="grid md:grid-cols-3 gap-8"
-              >
-                 {[1, 2, 3].map((i) => (
-                    <motion.div 
-                       key={i} 
-                       variants={FADE_UP} 
-                       whileHover={{ y: -12, scale: 1.01 }}
-                       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                       className="group rounded-[2rem] overflow-hidden bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:shadow-sky-500/15 dark:hover:shadow-sky-500/10 cursor-pointer flex flex-col relative"
-                    >
-                       {/* Subtle inner glow on hover */}
-                       <div className="absolute inset-0 bg-gradient-to-tr from-sky-500/0 via-transparent to-purple-500/0 group-hover:from-sky-500/5 group-hover:to-purple-500/5 transition-colors duration-500 pointer-events-none z-10" />
-
-                       <div className="aspect-[4/3] relative overflow-hidden bg-slate-200 dark:bg-slate-800 m-2 rounded-[1.5rem]">
-                          <motion.div 
-                             className="w-full h-full relative"
-                             whileHover={{ scale: 1.1 }}
-                             transition={{ duration: 0.8, ease: "easeOut" }}
-                          >
-                              <Image 
-                                src={`https://images.unsplash.com/photo-${i === 1 ? '1587620962725-abab7fe55159' : i === 2 ? '1542831371-29b0f74f9713' : '1555066931-4365d14bab8c'}?q=80&w=2070&auto=format&fit=crop`}
-                                alt="Course Thumbnail"
-                                fill
-                                className="object-cover"
-                              />
-                          </motion.div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-                          <div className="absolute top-4 left-4 z-20">
-                              <span className="px-4 py-1.5 rounded-full bg-white/90 dark:bg-black/90 backdrop-blur text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider shadow-sm">
-                                  {t(`trending_courses.${i}.category`)}
-                              </span>
-                          </div>
-                          
-                          {/* Play button overlay on hover */}
-                          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 z-20">
-                              <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white border border-white/30 shadow-2xl">
-                                  <PlayCircle className="w-8 h-8" />
-                              </div>
-                          </div>
-                       </div>
-                       <div className="p-6 sm:p-8 flex-1 flex flex-col relative z-20">
-                           <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-4 line-clamp-2 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-sky-600 group-hover:to-purple-500 dark:group-hover:from-sky-400 dark:group-hover:to-purple-400 transition-colors">
-                               {t(`trending_courses.${i}.title`)}
-                           </h3>
-                           <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-auto">
-                               <div className="flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800/50 px-3 py-1 rounded-full border border-slate-200 dark:border-slate-700/50"><Clock className="w-4 h-4" /> 24h</div>
-                               <div className="flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800/50 px-3 py-1 rounded-full border border-slate-200 dark:border-slate-700/50"><Users className="w-4 h-4" /> 1.2k</div>
-                               <div className="flex items-center gap-1 ml-auto font-black text-xl text-sky-600 dark:text-sky-400">$49</div>
-                           </div>
-                       </div>
-                    </motion.div>
-                 ))}
-              </motion.div>
-           </div>
-       </section>
-
-       {/* Asymmetric Benefits Section */}
-       <section className="py-20 lg:py-32 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
-           {/* Ambient Glows */}
-           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen" />
-           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen" />
-
-           <div className="container max-w-7xl mx-auto px-4 relative z-10">
-                 <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center max-w-3xl mx-auto mb-12 lg:mb-20"
-                 >
-                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 text-slate-900 dark:text-white tracking-tight">{t('benefits_title')}</h2>
-                 </motion.div>
-
-                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
-                     
-                     <motion.div 
-                        variants={STAGGER}
-                        initial="hidden"
-                        whileInView="show"
-                        viewport={{ once: true, margin: "-50px" }}
-                        className="space-y-4 lg:space-y-6"
-                     >
-                         {[
-                             { key: 'expert', icon: Users, color: 'text-sky-500' },
-                             { key: 'certificate', icon: Award, color: 'text-purple-500' },
-                             { key: 'access', icon: Clock, color: 'text-pink-500' },
-                             { key: 'community', icon: Globe, color: 'text-emerald-500' }
-                         ].map((benefit, i) => (
-                             <motion.div key={i} variants={FADE_UP} className="flex gap-4 lg:gap-6 p-4 sm:p-6 lg:p-8 rounded-2xl lg:rounded-3xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg sm:hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                 <div className={cn("flex-shrink-0 w-12 h-12 lg:w-16 lg:h-16 rounded-xl lg:rounded-2xl flex items-center justify-center border bg-slate-50 dark:bg-slate-800 dark:border-slate-700 shadow-inner", benefit.color)}>
-                                     <benefit.icon className="w-6 h-6 lg:w-8 lg:h-8" />
-                                 </div>
-                                 <div>
-                                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 sm:mb-2 lg:mb-3 text-slate-900 dark:text-white tracking-tight">{t(`benefits.${benefit.key}.title`)}</h3>
-                                     <p className="text-sm sm:text-base lg:text-lg text-slate-600 dark:text-slate-400 font-light leading-relaxed">{t(`benefits.${benefit.key}.desc`)}</p>
-                                 </div>
-                             </motion.div>
-                         ))}
-                     </motion.div>
-                     
-                     <motion.div 
-                        initial={{ opacity: 0, scale: 0.95, rotate: 1 }}
-                        whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                        transition={{ duration: 1, type: "spring" }}
-                        viewport={{ once: true }}
-                        className="relative h-[400px] sm:h-[500px] lg:h-[800px] rounded-[2rem] lg:rounded-[3rem] overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl p-2 sm:p-4 bg-white dark:bg-slate-900 mt-8 lg:mt-0 group"
-                     >
-                          <div className="absolute inset-0 bg-gradient-to-tr from-sky-500/10 to-purple-500/10 pointer-events-none group-hover:opacity-50 transition-opacity duration-700" />
-                          
-                          {/* Inner Parallax Container */}
-                          <div className="w-full h-full relative rounded-3xl lg:rounded-[2.5rem] overflow-hidden shadow-inner">
-                             <motion.div 
-                                style={{ y: useTransform(heroScroll, [0, 1], ["0%", "-10%"]) }}
-                                className="absolute inset-[-10%] w-[120%] h-[120%]"
-                             >
-                                 <Image 
-                                   src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2670&auto=format&fit=crop"
-                                   alt="Learning"
-                                   fill
-                                   className="object-cover group-hover:scale-105 transition-transform duration-[2s] ease-out"
-                                 />
-                             </motion.div>
-                             {/* Floating Elements on Image */}
-                             <motion.div 
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute bottom-6 left-6 sm:top-10 sm:right-10 sm:bottom-auto sm:left-auto bg-white/90 dark:bg-slate-900/90 backdrop-blur-md p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4"
-                             >
-                                <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0">
-                                    <Award className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <div className="text-xl font-bold text-slate-900 dark:text-white">{t('certified')}</div>
-                                    <div className="text-sm font-medium text-slate-500">{t('upon_completion')}</div>
-                                </div>
-                             </motion.div>
-                          </div>
-                     </motion.div>
-                     
-                 </div>
-           </div>
-       </section>
-
-       {/* Orbiting Tech Stack / Learning Ecosystem */}
-       <section className="py-24 lg:py-32 bg-slate-100 dark:bg-slate-900 overflow-hidden relative border-t border-slate-200/50 dark:border-slate-800/50">
-           {/* Deep Space Background Glow */}
-           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sky-500/5 dark:bg-sky-500/10 rounded-full blur-[120px] pointer-events-none mix-blend-screen" />
-           <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03] dark:opacity-[0.02] pointer-events-none" />
-           
-           <div className="container max-w-7xl mx-auto px-4 relative z-10">
-               <motion.div 
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 className="text-center max-w-3xl mx-auto mb-16 lg:mb-24"
-               >
-                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 text-slate-900 dark:text-white tracking-tight">{t('ecosystem_title')}</h2>
-                   <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-light">{t('ecosystem_subtitle')}</p>
-               </motion.div>
-
-               {/* Orbital System */}
-               <div className="relative h-[400px] sm:h-[600px] flex items-center justify-center">
-                   {/* Core Node */}
-                   <motion.div 
-                      initial={{ scale: 0.5, opacity: 0 }}
-                      whileInView={{ scale: 1, opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ type: "spring", stiffness: 100 }}
-                      className="absolute z-30 w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-sky-500 to-purple-600 rounded-full flex flex-col items-center justify-center shadow-[0_0_60px_-10px_rgba(14,165,233,0.6)] border-4 border-white/50 dark:border-slate-900/50 backdrop-blur-md"
-                   >
-                       <span className="text-xl sm:text-2xl font-black text-white px-2 tracking-wider">OMUZ</span>
-                       <span className="text-[10px] sm:text-xs text-sky-100 font-medium uppercase tracking-[0.2em]">{t('ecosystem_core')}</span>
-                   </motion.div>
-
-                   {/* Orbit Rings (Spinning) */}
-                   <div className="absolute w-[250px] sm:w-[350px] h-[250px] sm:h-[350px] rounded-full border-2 border-dashed border-sky-300/30 dark:border-sky-500/30 animate-[spin_20s_linear_infinite]" />
-                   <div className="absolute w-[350px] sm:w-[500px] h-[350px] sm:h-[500px] rounded-full border-2 border-dotted border-purple-300/30 dark:border-purple-500/30 animate-[spin_35s_linear_infinite_reverse]" />
-                   <div className="absolute w-[450px] sm:w-[700px] h-[450px] sm:h-[700px] rounded-full border border-emerald-300/20 dark:border-emerald-500/20 animate-[spin_50s_linear_infinite]" />
-
-                   {/* Floating Nodes on Orbits */}
-                   {[
-                      { icon: Layout, label: "Frontend", color: "text-sky-500", pos: "top-0 sm:top-8 left-1/2 -translate-x-1/2", delay: 0 },
-                      { icon: Globe, label: "Backend", color: "text-emerald-500", pos: "bottom-0 sm:bottom-8 left-1/2 -translate-x-1/2", delay: 1 },
-                      { icon: Award, label: "Design", color: "text-pink-500", pos: "top-1/2 -translate-y-1/2 left-0 sm:left-12", delay: 2 },
-                      { icon: Users, label: "Marketing", color: "text-orange-500", pos: "top-1/2 -translate-y-1/2 right-0 sm:right-12", delay: 3 },
-                      { icon: Briefcase, label: "Business", color: "text-purple-500", pos: "top-[15%] left-[15%] sm:top-[20%] sm:left-[20%]", delay: 4 },
-                      { icon: Clock, label: "Analytics", color: "text-yellow-500", pos: "bottom-[15%] right-[15%] sm:bottom-[20%] sm:right-[20%]", delay: 5 }
-                   ].map((item, i) => (
-                      <motion.div 
-                         key={i}
-                         initial={{ scale: 0, opacity: 0 }}
-                         whileInView={{ scale: 1, opacity: 1 }}
-                         transition={{ delay: item.delay * 0.15, type: "spring", stiffness: 200 }}
-                         viewport={{ once: true }}
-                         className={cn("absolute flex flex-col items-center gap-2 sm:gap-3 z-20", item.pos)}
-                      >
-                          <motion.div 
-                             animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
-                             transition={{ duration: 4 + i, repeat: Infinity, ease: "easeInOut", delay: i * 0.5 }}
-                             className={cn("w-14 h-14 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl border border-white/50 dark:border-slate-700 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3)] flex flex-col items-center justify-center relative overflow-hidden group hover:scale-110 transition-transform cursor-pointer", item.color)}
-                          >
-                              {/* Inner Glow */}
-                              <div className="absolute inset-0 bg-current opacity-5 group-hover:opacity-15 transition-opacity duration-300" />
-                              <item.icon className="w-6 h-6 sm:w-8 sm:h-8 mb-1 transition-transform group-hover:-translate-y-1" />
-                              <span className="text-[9px] sm:text-[11px] font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">{item.label}</span>
-                          </motion.div>
-                      </motion.div>
-                   ))}
-               </div>
-           </div>
-       </section>
- 
-       {/* Learning Path / How it Works */}
-       <section className="py-24 lg:py-32 bg-white dark:bg-slate-900 border-t border-slate-200/50 dark:border-slate-800/50">
-           <div className="container max-w-5xl mx-auto px-4">
-              <motion.div 
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 className="text-center mb-16 lg:mb-24"
-              >
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-slate-900 dark:text-white tracking-tight">{t('how_it_works_title')}</h2>
-              </motion.div>
-
-              <div className="relative">
-                 {/* Connecting Line */}
-                 <div className="absolute left-[27px] sm:left-1/2 top-4 bottom-4 w-0.5 bg-gradient-to-b from-sky-500/20 via-purple-500/20 to-sky-500/20 sm:-translate-x-1/2" />
-
-                 <div className="space-y-12 sm:space-y-24">
-                    {[
-                        { step: 1, title: t('how_it_works.step1_title'), desc: t('how_it_works.step1_desc'), color: "sky" },
-                        { step: 2, title: t('how_it_works.step2_title'), desc: t('how_it_works.step2_desc'), color: "purple" },
-                        { step: 3, title: t('how_it_works.step3_title'), desc: t('how_it_works.step3_desc'), color: "emerald" }
-                    ].map((item, i) => (
-                        <motion.div 
-                           key={i}
-                           initial={{ opacity: 0, y: 30 }}
-                           whileInView={{ opacity: 1, y: 0 }}
-                           viewport={{ once: true, margin: "-100px" }}
-                           className={cn(
-                              "relative flex flex-col sm:flex-row items-start sm:items-center gap-8 lg:gap-16",
-                              i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-                           )}
-                        >
-                            {/* Number Indicator */}
-                            <div className="absolute left-0 sm:left-1/2 sm:-translate-x-1/2 w-14 h-14 rounded-full bg-white dark:bg-slate-950 border-4 border-slate-50 dark:border-slate-900 flex items-center justify-center z-10 shadow-xl">
-                               <div className={cn(
-                                  "w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold text-white shadow-inner",
-                                  item.color === 'sky' ? 'bg-sky-500' : item.color === 'purple' ? 'bg-purple-500' : 'bg-emerald-500'
-                               )}>
-                                  {item.step}
-                               </div>
-                            </div>
-
-                            {/* Content Card */}
-                            <div className={cn("w-full sm:w-1/2 pl-20 sm:pl-0", i % 2 === 0 ? "sm:pr-16 text-left sm:text-right" : "sm:pl-16 text-left")}>
-                                <div className="bg-slate-50 dark:bg-slate-800/50 p-6 lg:p-8 rounded-3xl border border-slate-200 dark:border-slate-700/50 hover:shadow-xl transition-shadow duration-300">
-                                   <h3 className="text-2xl font-bold mb-3 text-slate-900 dark:text-white">{item.title}</h3>
-                                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-light">{item.desc}</p>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                 </div>
-              </div>
-           </div>
-       </section>
-
-       {/* Custom Online Request Form */}
-       <section className="py-32 relative overflow-hidden bg-slate-950 border-t border-slate-900">
-          {/* Deep Space Glowing Background for the Form */}
-          <div className="absolute inset-0 z-0">
-              <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-sky-600/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
-              <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
-              <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.02]" />
-          </div>
-
-          <div className="container max-w-6xl mx-auto px-4 relative z-10">
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                  
-                  {/* Visual Left Side - Cinematic */}
-                  <motion.div 
-                     initial={{ opacity: 0, scale: 0.9 }}
-                     whileInView={{ opacity: 1, scale: 1 }}
-                     viewport={{ once: true }}
-                     className="hidden lg:block relative h-[600px] rounded-[3rem] overflow-hidden"
-                  >
-                      <Image 
-                          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
-                          alt="Start Learning"
-                          fill
-                          className="object-cover scale-105 hover:scale-100 transition-transform duration-[3s]"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-900/40 to-transparent" />
+       {/* REDESIGNED CALL TO ACTION / REGISTRATION */}
+       <section className="py-24 relative z-10 overflow-hidden bg-slate-50 dark:bg-slate-950">
+          <div className="absolute inset-0 bg-sky-200/50 dark:bg-sky-900/20 blur-3xl rounded-full translate-y-1/2 scale-150 pointer-events-none" />
+          <div className="container max-w-6xl mx-auto px-4 relative">
+             <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-[2.5rem] bg-white dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-900 dark:to-slate-950 border border-slate-200 dark:border-slate-800 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row"
+             >
+                <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 blur-[100px] rounded-full pointer-events-none" />
+                
+                {/* Visual / Info Side */}
+                <div className="lg:w-5/12 p-10 md:p-14 bg-slate-900 text-white relative overflow-hidden flex flex-col justify-center">
+                   <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay" />
+                   <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-sky-500/30 blur-[100px] rounded-full" />
+                   
+                   <div className="relative z-10">
+                      <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-8 border border-white/20">
+                         <PlayCircle className="w-6 h-6 text-sky-400" />
+                      </div>
+                      <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white leading-tight">
+                        {formT('join_students_title') || formT('title')}
+                      </h2>
+                      <p className="text-lg text-slate-300 mb-10 leading-relaxed font-light">
+                        {formT('join_students_subtitle') || formT('subtitle')}
+                      </p>
                       
-                      <div className="absolute bottom-12 left-12 right-12">
-                          <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl">
-                              <h3 className="text-2xl font-bold text-white mb-2">{formT("join_students_title")}</h3>
-                              <p className="text-slate-300 font-light text-lg">{formT("join_students_subtitle")}</p>
-                          </div>
+                      <div className="space-y-6">
+                         {[
+                           { title: t('students.features.cert.title'), icon: Award },
+                           { title: t('students.features.mentor.title'), icon: Users },
+                           { title: t('creators.features.analytics.title'), icon: BarChart3 }
+                         ].map((item, i) => (
+                           <div key={i} className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                             <div className="w-10 h-10 rounded-full bg-sky-500/20 flex items-center justify-center shrink-0">
+                                <item.icon className="w-5 h-5 text-sky-400" />
+                             </div>
+                             <span className="font-medium text-slate-200">{item.title}</span>
+                           </div>
+                         ))}
                       </div>
-                  </motion.div>
+                   </div>
+                </div>
 
-                  {/* Form Right Side - Glassmorphism */}
-                  <motion.div 
-                     initial={{ opacity: 0, x: 30 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                     viewport={{ once: true }}
-                  >
-                      <div className="bg-slate-900/50 backdrop-blur-2xl border border-white/10 p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
-                          {/* Inner soft glow */}
-                          <div className="absolute -top-32 -right-32 w-64 h-64 bg-sky-500/20 rounded-full blur-3xl pointer-events-none" />
-                          
-                          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
-                              {formT("title")}
-                          </h2>
-                          <p className="text-slate-400 text-lg sm:text-xl font-light mb-10">
-                              {formT("subtitle")}
-                          </p>
-
-                          <form onSubmit={handleFormSubmit} className="space-y-6 relative z-10 text-left">
-                              <div className="space-y-2">
-                                  <label className="text-sm font-medium text-slate-300 ml-1">{formT("name_placeholder")}</label>
-                                  <Input 
-                                      placeholder={formT("name_placeholder")}
-                                      required
-                                      className="h-14 rounded-2xl bg-slate-950/50 border-white/10 text-white placeholder:text-slate-500 focus:ring-2 focus:ring-sky-500/50 transition-all px-6 text-lg"
-                                  />
-                              </div>
-                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                  <div className="space-y-2">
-                                      <label className="text-sm font-medium text-slate-300 ml-1">{formT("phone_placeholder")}</label>
-                                      <Input 
-                                          type="tel"
-                                          placeholder={formT("phone_placeholder")}
-                                          required
-                                          className="h-14 rounded-2xl bg-slate-950/50 border-white/10 text-white placeholder:text-slate-500 focus:ring-2 focus:ring-sky-500/50 transition-all px-6 text-lg"
-                                      />
-                                  </div>
-                                  <div className="space-y-2">
-                                      <label className="text-sm font-medium text-slate-300 ml-1">{formT("email_placeholder")}</label>
-                                      <Input 
-                                          type="email"
-                                          placeholder={formT("email_placeholder")}
-                                          required
-                                          className="h-14 rounded-2xl bg-slate-950/50 border-white/10 text-white placeholder:text-slate-500 focus:ring-2 focus:ring-sky-500/50 transition-all px-6 text-lg"
-                                      />
-                                  </div>
-                              </div>
-                              
-                              <Button 
-                                  size="lg"
-                                  disabled={isSubmitting}
-                                  className="w-full h-16 rounded-2xl bg-gradient-to-r from-sky-500 to-purple-500 hover:from-sky-400 hover:to-purple-400 text-white text-lg font-bold shadow-[0_0_30px_-5px_var(--tw-shadow-color)] shadow-sky-500/40 transition-all hover:scale-[1.02] mt-4"
-                              >
-                                  {isSubmitting ? (
-                                      <><Loader2 className="mr-2 h-6 w-6 animate-spin" /> {formT("sending")}</>
-                                  ) : (
-                                      <>{formT("submit")} <Send className="ml-2 h-5 w-5" /></>
-                                  )}
-                              </Button>
-                          </form>
+                {/* Form Side */}
+                <div className="lg:w-7/12 p-10 md:p-14 lg:p-16 flex flex-col justify-center relative z-10">
+                   <div className="mb-10 lg:hidden">
+                       <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{formT('title')}</h3>
+                       <p className="text-slate-600 dark:text-slate-400">{formT('subtitle')}</p>
+                   </div>
+                   
+                   <form onSubmit={handleFormSubmit} className="space-y-6">
+                      <div className="space-y-2">
+                         <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">{formT('name_placeholder')}</label>
+                         <Input required type="text" placeholder="John Doe" className="bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 h-14 rounded-xl focus-visible:ring-sky-500/50 text-lg px-5 shadow-inner" />
                       </div>
-                  </motion.div>
-              </div>
+                      <div className="space-y-2">
+                         <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">{formT('phone_placeholder')}</label>
+                         <Input required type="tel" placeholder="+992 (XX) XXX-XXXX" className="bg-slate-50 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 h-14 rounded-xl focus-visible:ring-sky-500/50 text-lg px-5 shadow-inner" />
+                      </div>
+                      
+                      <div className="pt-4">
+                         <Button disabled={isSubmitting} type="submit" className="w-full h-16 text-lg font-semibold rounded-xl bg-sky-600 hover:bg-sky-500 text-white transition-all shadow-lg hover:shadow-sky-500/30 group">
+                            {isSubmitting ? (
+                              <Loader2 className="w-6 h-6 animate-spin mx-auto" />
+                            ) : (
+                              <div className="flex items-center justify-center w-full">
+                                {formT('submit')} 
+                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                              </div>
+                            )}
+                         </Button>
+                      </div>
+                      <p className="text-xs text-slate-500 dark:text-slate-500 text-center mt-6 flex items-center justify-center gap-2">
+                         <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                         {formT('agreement')}
+                      </p>
+                   </form>
+                </div>
+             </motion.div>
           </div>
        </section>
-       
-       <Footer />
+
     </div>
   );
 }

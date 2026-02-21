@@ -1,7 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
-import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { ArrowRight, Target, Lightbulb, Users, Globe, Shield, Zap } from "lucide-react";
@@ -151,8 +150,6 @@ export default function AboutPage({
              </div>
           </div>
        </section>
-
-       <Footer />
     </div>
   );
 }

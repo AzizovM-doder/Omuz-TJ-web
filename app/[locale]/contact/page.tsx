@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea"; // Need to check if this exists, if not use standard textarea or create it
 import { MapPin, Mail, Phone, Send } from "lucide-react";
-import { Footer } from "@/components/footer";
 
 export default function ContactPage({
   params
@@ -113,7 +112,6 @@ export default function ContactPage({
            </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

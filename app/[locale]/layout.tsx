@@ -9,6 +9,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,7 +75,7 @@ export default async function RootLayout({
   const dir = ['ar', 'fa', 'he'].includes(locale) ? 'rtl' : 'ltr';
 
   return (
-    <html lang={locale} dir={dir} suppressHydrationWarning>
+    <html lang={locale} dir={dir} suppressHydrationWarning className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased mx-auto shadow-2xl min-h-screen`}
       >
@@ -89,7 +90,13 @@ export default async function RootLayout({
             <main className="pt-20">
               {children}
             </main>
-            <ToastContainer position="top-right" theme="system" />
+            <Footer />
+            <ToastContainer 
+              position="top-right" 
+              theme="light" 
+              className="z-[1000000]"
+              toastClassName="bg-white text-slate-900 shadow-2xl rounded-xl border border-slate-100"
+            />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

@@ -9,7 +9,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
 import { BookOpen, Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet"
 
 export function Navbar() {
   const t = useTranslations("navigation")
@@ -79,12 +79,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex items-center gap-4">
-           {/* Language Switcher for Mobile */}
-           <div className="block sm:hidden flex items-center gap-2">
-             <ThemeToggle />
-             <LanguageSwitcher />
-           </div>
+        <div className="md:hidden flex items-center">
 
            <Sheet>
              <SheetTrigger asChild>
@@ -93,6 +88,12 @@ export function Navbar() {
                </Button>
              </SheetTrigger>
              <SheetContent  side="right" className="bg-background border-l border-border">
+               <SheetHeader className="sr-only">
+                 <SheetTitle>{t('menu')}</SheetTitle>
+                 <SheetDescription>
+                   {t('menu_description')}
+                 </SheetDescription>
+               </SheetHeader>
                <div className="flex flex-col gap-6 mt-10">
                  <Link href="/" className="text-lg font-medium">
                     {t('home')}
@@ -114,6 +115,11 @@ export function Navbar() {
                  <div className="flex items-center justify-between">
                     <span className="text-foreground/60 text-sm">{t('theme')}</span>
                     <ThemeToggle />
+                 </div>
+                 
+                 <div className="flex items-center justify-between">
+                    <span className="text-foreground/60 text-sm">Language</span>
+                    <LanguageSwitcher />
                  </div>
 
                  <Button 
